@@ -1,0 +1,59 @@
+.menuSection{
+    @apply flex pl-4 flex-col gap-4;
+}
+
+.h2Projects{
+    @apply pl-4 pb-4;
+}
+
+.iconsContainer{
+    @apply flex gap-4 pl-4;
+}
+
+.iconWithLink{
+    height: 24px;
+    width: 24px;
+    color: hsl(var(--primary)/0.5);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    &:hover{
+        color: hsl(var(--primary));
+        transition: color 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .menuSection{
+        @apply pl-0 pt-6;
+    }
+
+    .h2Projects{
+        @apply pl-0;
+    }
+
+    .iconsContainer{
+        @apply pl-0;
+    }
+
+    .iconWithLink{
+        @apply ml-0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menuSection{
+        @apply pl-0 pt-6;
+    }
+
+    .h2Projects{
+        @apply pl-0;
+    }
+
+    .iconsContainer{
+        @apply pl-0;
+    }
+
+    .iconWithLink{
+        @apply ml-0;
+    }
+}

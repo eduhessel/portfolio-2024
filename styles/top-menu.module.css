@@ -1,0 +1,29 @@
+.menuContainer{
+    background-color: hsl(var(--foreground)/ 0.1);
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.menuContent{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 8px 0;
+    @apply content-between justify-between;
+}
+
+@media screen and (max-width: 1024px) {
+    .menuContent{
+        padding: 16px 64px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menuContent{
+        padding: 16px 16px;
+    }
+}
