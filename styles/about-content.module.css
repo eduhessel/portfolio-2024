@@ -1,0 +1,14 @@
+.container{
+    @apply w-full flex flex-col gap-8 justify-start pl-4;
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        @apply pt-4;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        @apply pt-4;
+    }
+}

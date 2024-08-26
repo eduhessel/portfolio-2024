@@ -50,21 +50,12 @@ export default function HomeContent() {
           <h1>{t('title')}</h1>
           <h2>{t('subtitle')}</h2>
         </header>
-        <p>
-          Iniciei no Design com 14 anos de idade na área de design gráfico,
-          hoje aos 23 vejo o quanto isso foi importante para minha carreira,
-          tenho um alto nível de criatividade e resolução de problemas. Tenho
-          foco em UI/UX e Product Design com 3 anos de experiência, com atuação
-          na execução de projetos com equipes multidisciplinares, incorporando
-          princípios de usabilidade e arquitetura da informação nas propostas
-          de design, garantindo uma abordagem centrada no usuário desde a
-          concepção até a implementação.
-        </p>
-        <p>Role para baixo e veja meus projetos!</p>
+        <p>{t('description')}</p>
+        <p>{t('rollDown')}</p>
       </section>
 
       <section aria-labelledby="projetos" className="flex flex-col">
-        <h2 id="projetos" className={styles.h2Projects}>Projetos</h2>
+        <h2 id="projetos" className={styles.h2Projects}>{t('projects')}</h2>
         <div className="grid grid-cols-2">
           {projectImages.map((image, index) => (
             <Image
@@ -79,7 +70,7 @@ export default function HomeContent() {
       </section>
 
       <section aria-labelledby="meus-links">
-        <h2 id="meus-links" className={styles.h2Projects}>Meus Links</h2>
+        <h2 id="meus-links" className={styles.h2Projects}>{t('myLinks')}</h2>
         <div className={styles.iconsContainer}>
             <Link href="https://www.linkedin.com/in/eduardo-hessel" target="_blank" rel="noopener noreferrer">
                 <LinkedInLogoIcon className={styles.iconWithLink}/>

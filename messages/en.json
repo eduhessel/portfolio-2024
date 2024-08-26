@@ -1,6 +1,100 @@
 {
-    "HomePage": {
-      "title": "Hello I'm Eduardo Hessel!",
-      "subtitle": "UI/UX Designer | Product Designer | Web Designer | Desenvolvedor Front-end"
+  "HamburguerMenu":{
+    "home": "Home",
+    "about": "About"
+  },
+  "HomePage": {
+    "title": "Hi, I'm Eduardo Hessel!",
+    "subtitle": "UI/UX Designer | Product Designer | Web Designer | Front-end Developer",
+    "description": "I started in Design at the age of 14 in graphic design, and now at 23, I see how important that was for my career. I have a high level of creativity and problem-solving skills. I focus on UI/UX and Product Design with 3 years of experience, working on projects with multidisciplinary teams, incorporating usability principles and information architecture into design proposals, ensuring a user-centered approach from conception to implementation.",
+    "rollDown": "Scroll down and check out my projects!",
+    "projects": "Projects",
+    "myLinks": "My Links"
+  },
+  "AsideMenu": {
+    "projects": "HOME",
+    "6": "6. AIVest - Design System (Under Construction)",
+    "5": "5. LINX - Chatbot (Under Construction)",
+    "4": "4. SINV Bradesco - Desktop B2B App",
+    "3": "3. Petinder - Mobile App",
+    "2": "2. Advisor App - Mobile SaaS App",
+    "1": "1. Allbooks - Mobile App",
+    "about": "ABOUT ME",
+    "links": "MY LINKS"
+  },
+  "About": {
+    "title": "About Eduardo Hessel",
+    "paragraph1": "Graduated in Animation Design, currently pursuing an MBA in Software Engineering. With over 3 years of experience in UX/UI Design, Product Design, and Front-end Development, I have worked at medium and large companies in website development, creating investment management applications in the financial sector, digital banks, and software houses. I am also capable of contributing to any area, significantly enhancing the creation of intuitive and responsive user interfaces, usability testing, platform and site testing, creating chatbot scripts, and all UX processes, always aiming to improve the end-user experience.",
+    "paragraph2": "Extensive experience in web and mobile application development, with a focus on implementing Design Systems and using libraries such as Daisy UI and Shadcn UI, along with solid expertise in modern technologies like NextJS, Typescript, Vue, and Bootstrap. My work is characterized by the ability to create interfaces that adhere to strict style standards, ensuring consistency and excellence throughout the development process, from conception to final delivery.",
+    "paragraph3": "Proficient in Figma, Visual Studio Code, Git, GitHub, Teams, Google Meet, Trello, Clickup, Notion, and Jira, with a focus on promoting effective collaboration and optimizing processes in multidisciplinary teams. I am committed to continuing to expand my technical skills and contribute to the development of innovative digital products that add value to both users and organizations. Communication, creativity, problem-solving, networking, adaptability, empathy, flexibility.",
+    "professionalExperience": "Professional Experience",
+    "polvo": {
+      "name": "Polvo Software House",
+      "position": "Product Designer - UI/UX Designer",
+      "duration": "Jan/2015 - Aug/2024",
+      "type": "Freelance"
+    },
+    "smartbrain": {
+      "name": "Smartbrain",
+      "position": "Product Designer - UI/UX Designer - Front-end Developer",
+      "duration": "Jan/2022 - May/2024",
+      "type": "Full-time"
+    },
+    "primeo": {
+      "name": "Primeo Bank",
+      "position": "Product Designer - UI/UX Designer - Front-end Developer",
+      "duration": "Jul/2024 - Aug/2024",
+      "type": "Contract"
+    },
+    "tvm": {
+      "name": "Tem Vaga Mestre?",
+      "position": "Product Designer - UI/UX Designer",
+      "duration": "May/2024 - Jul/2024",
+      "type": "Volunteer"
+    },
+    "education": "Education",
+    "usp": {
+      "course": "MBA in Software Engineering",
+      "university": "University of São Paulo",
+      "time": "Apr/2024 - Dec/2025",
+      "status": "In Progress"
+    },
+    "senac": {
+      "course": "Technologist in Animation Design",
+      "university": "SENAC University Center",
+      "time": "Jan/2018 - Dec/2019",
+      "status": "Completed"
+    },
+    "likeThings": "Things I Enjoy Doing",
+    "animes": {
+      "title": "Favorite Animes",
+      "1": "Evangelion",
+      "2": "Cowboy Bebop",
+      "3": "Cyberpunk"
+    },
+    "hobbies": {
+      "title": "Favorite Hobbies",
+      "1": "Playing video games",
+      "2": "Reading",
+      "3": "Design"
+    },
+    "games": {
+      "title": "Favorite Games",
+      "1": "Black Myth: Wukong",
+      "2": "GTA V",
+      "3": "Rocket League"
+    },
+    "movies": {
+      "title": "Favorite Movies",
+      "1": "Spider-Man: Across the Spider-Verse",
+      "2": "Rebuild of Evangelion",
+      "3": "Pacific Rim"
+    },
+    "musics": {
+      "title": "Favorite Music",
+      "1": "Am I Dreaming",
+      "2": "I Really Want to Stay at Your House",
+      "3": "Annihilate"
     }
+  }
 }

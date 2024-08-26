@@ -1,29 +1,38 @@
 import styles from "@/styles/aside-menu.module.css";
 import { EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import Link from 'next/link';
+import { useLocale } from "next-intl";
+import { useTranslations } from 'next-intl';
 
 export default function AsideMenu(){
+    const locale = useLocale();
+    const t = useTranslations('AsideMenu');
+
     return(
         <div className={styles.menuContainer}>
             {/* Projetos */}
-            <h2>PROJETOS</h2>
-            <p className={styles.pWithLink}>6. AIVest - Design System (Em construção)</p>
-            <p className={styles.pWithLink}>5. LINX - Chatbot (Em construção)</p>
+            <Link href={"/"}>
+                <h2 className={styles.h2WithLink}>{t('projects')}</h2>
+            </Link>
+            <p className={styles.pWithLink}>{t('6')}</p>
+            <p className={styles.pWithLink}>{t('5')}</p>
             <Link href="https://www.behance.net/gallery/201725767/SINV-Bradesco" target="_blank" rel="noopener noreferrer">
-                <p className={styles.pWithLink}>4. SINV Bradesco - Desktop B2B App</p>
+                <p className={styles.pWithLink}>{t('4')}</p>
             </Link>
             <Link href="https://www.behance.net/gallery/199591237/Petinder-UIUX-Design-Case-Study" target="_blank" rel="noopener noreferrer">
-                <p className={styles.pWithLink}>3. Petinder - Mobile App</p>
+                <p className={styles.pWithLink}>{t('3')}</p>
             </Link>
             <Link href="https://www.behance.net/gallery/176413143/Advisor-App-v20" target="_blank" rel="noopener noreferrer">
-                <p className={styles.pWithLink}>2. Advisor App - Mobile SaaS App</p>
+                <p className={styles.pWithLink}>{t('2')}</p>
             </Link>
             <Link href="https://www.behance.net/gallery/118707067/ALLBOOKS-APP-UI-DESIGN" target="_blank" rel="noopener noreferrer">
-                <p className={styles.pWithLink}>1. Allbooks - Mobile App</p>
+                <p className={styles.pWithLink}>{t('1')}</p>
             </Link>
             {/* Sobre mim */}
-            <h2 className={styles.h2WithLink}>SOBRE MIM</h2>
-            <h2>MEUS LINKS</h2>
+            <Link href={`/${locale}/sobre`}>
+                <h2 className={styles.h2WithLink}>{t('about')}</h2>
+            </Link>
+            <h2>{t('links')}</h2>
             {/* Ícones */}
             <div className="flex gap-4">
                 <Link href="https://www.linkedin.com/in/eduardo-hessel" target="_blank" rel="noopener noreferrer">
