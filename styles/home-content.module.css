@@ -70,6 +70,10 @@
     .iconWithLink{
         @apply ml-0;
     }
+
+    .imageContainer:hover .imageOverlay {
+        opacity: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -87,5 +91,9 @@
 
     .iconWithLink{
         @apply ml-0;
+    }
+
+    .imageContainer:hover .imageOverlay {
+        opacity: 0;
     }
 }

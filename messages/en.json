@@ -1,7 +1,13 @@
 {
   "HamburguerMenu":{
     "home": "Home",
-    "about": "About"
+    "about": "About",
+    "6": "6. AIVest - Design System (Under Construction)",
+    "5": "5. LINX - Chatbot (Under Construction)",
+    "4": "4. SINV Bradesco - Desktop B2B App",
+    "3": "3. Petinder - Mobile App",
+    "2": "2. Advisor App - Mobile SaaS App",
+    "1": "1. Allbooks - Mobile App"
   },
   "Footer":{
     "tools": "Website developed using Nextjs 14, Tailwind, ShadcnUI and Figma.",

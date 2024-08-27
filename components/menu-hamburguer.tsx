@@ -30,6 +30,36 @@ export function MenuHamburguer() {
                 {t("about")}
             </Link>
         </DropdownMenuItem>
+        <DropdownMenuItem>
+            <Link href={""} className="w-full">
+                {t("6")}
+            </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+            <Link href={""} className="w-full">
+                {t("5")}
+            </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+            <Link href={"https://www.behance.net/gallery/201725767/SINV-Bradesco"} className="w-full" target="_blank" rel="noopener noreferrer">
+                {t("4")}
+            </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+            <Link href={"https://www.behance.net/gallery/199591237/Petinder-UIUX-Design-Case-Study"} className="w-full" target="_blank" rel="noopener noreferrer">
+                {t("3")}
+            </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+            <Link href={"https://www.behance.net/gallery/176413143/Advisor-App-v20"} className="w-full" target="_blank" rel="noopener noreferrer">
+                {t("2")}
+            </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+            <Link href={"https://www.behance.net/gallery/118707067/ALLBOOKS-APP-UI-DESIGN"} className="w-full" target="_blank" rel="noopener noreferrer">
+                {t("1")}
+            </Link>
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )
