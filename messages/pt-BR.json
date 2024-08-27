@@ -3,13 +3,33 @@
     "home": "Tela inicial",
     "about": "Sobre mim"
   },
+  "Footer":{
+    "tools": "Site desenvolvido utilizando Nextjs 14, Tailwind, ShadcnUI e Figma.",
+    "rights": "Todos os direitos reservados. © 2024 Eduardo Hessel"
+  },
   "HomePage": {
     "title": "Olá, sou o Eduardo Hessel!",
     "subtitle": "UI/UX Designer | Product Designer | Web Designer | Desenvolvedor Front-end",
     "description": "Iniciei no Design com 14 anos de idade na área de design gráfico, hoje aos 23 vejo o quanto isso foi importante para minha carreira, tenho um alto nível de criatividade e resolução de problemas. Tenho foco em UI/UX e Product Design com 3 anos de experiência, com atuação na execução de projetos com equipes multidisciplinares, incorporando princípios de usabilidade e arquitetura da informação nas propostas de design, garantindo uma abordagem centrada no usuário desde a concepção até a implementação.",
     "rollDown": "Role para baixo e veja meus projetos!",
     "projects": "Projetos",
-    "myLinks": "Meus Links"
+    "myLinks": "Meus Links",
+    "hoverTexts": {
+      "aivest": "Design System - Projeto em desenvolvimento",
+      "linx": "Chatbot - Projeto em desenvolvimento",
+      "sinvBradesco": "UI/UX e gerenciamento do projeto em conjunto com a equipe do Bradesco",
+      "petinder": "UX Research e UI Design",
+      "advisorApp": "UI/UX Design",
+      "allBooks": "UI Design"
+    },
+    "altTexts": {
+      "aivest": "Imagem referente ao projeto Design System - Projeto AIVest",
+      "linx": "Imagem referente ao projeto Chatbot - Projeto em desenvolvimento",
+      "sinvBradesco": "Imagem referente ao projeto UI/UX e gerenciamento do projeto em conjunto com a equipe do Bradesco aplicativo para computador",
+      "petinder": "Imagem referente ao projeto UX Research e UI Design Petinder aplicativo mobile",
+      "advisorApp": "Imagem referente ao projeto UI/UX Design Advisor aplicativo mobile",
+      "allBooks": "Imagem referente ao projeto UI Design Allbooks aplicativo mobile"
+    }
   },
   "AsideMenu":{
     "projects": "TELA INICIAL",

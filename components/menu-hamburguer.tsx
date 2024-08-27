@@ -19,7 +19,7 @@ export function MenuHamburguer() {
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="start">
         <DropdownMenuItem>
             <Link href={"/"} className="w-full">
                 {t("home")}

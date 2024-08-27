@@ -1,0 +1,120 @@
+{
+    "HamburguerMenu":{
+      "home": "Page d'accueil",
+      "about": "À propos de moi"
+    },
+    "Footer":{
+      "tools": "Site développé avec Nextjs 14, Tailwind, ShadcnUI et Figma.",
+      "rights": "Tous droits réservés. © 2024 Eduardo Hessel"
+    },
+    "HomePage": {
+      "title": "Bonjour, je suis Eduardo Hessel !",
+      "subtitle": "UI/UX Designer | Product Designer | Web Designer | Développeur Front-end",
+      "description": "J'ai commencé le design à 14 ans dans le domaine du design graphique, aujourd'hui à 23 ans je vois à quel point cela a été important pour ma carrière, j'ai un haut niveau de créativité et de résolution de problèmes. Je me concentre sur le UI/UX et le Product Design avec 3 ans d'expérience, travaillant sur l'exécution de projets avec des équipes multidisciplinaires, en incorporant des principes d'utilisabilité et d'architecture de l'information dans les propositions de design, garantissant une approche centrée sur l'utilisateur depuis la conception jusqu'à l'implémentation.",
+      "rollDown": "Faites défiler vers le bas et découvrez mes projets !",
+      "projects": "Projets",
+      "myLinks": "Mes Liens",
+      "hoverTexts": {
+        "aivest": "Système de design - Projet en cours de développement",
+        "linx": "Chatbot - Projet en cours de développement",
+        "sinvBradesco": "Conception UI/UX et gestion de projet en partenariat avec l'équipe de Bradesco",
+        "petinder": "Recherche UX et design UI",
+        "advisorApp": "Conception UI/UX",
+        "allBooks": "Design UI"
+      },
+      "altTexts": {
+        "aivest": "Image liée au projet Système de Design - Projet AIVest",
+        "linx": "Image liée au projet Chatbot - Projet en cours de développement",
+        "sinvBradesco": "Image liée au projet de conception UI/UX et de gestion de projet en partenariat avec l'équipe de Bradesco - application de bureau",
+        "petinder": "Image liée au projet de Recherche UX et de design UI - application mobile Petinder",
+        "advisorApp": "Image liée au projet de conception UI/UX - application mobile Advisor",
+        "allBooks": "Image liée au projet de design UI - application mobile Allbooks"
+      }
+    },
+    "AsideMenu":{
+      "projects": "PAGE D'ACCUEIL",
+      "6": "6. AIVest - Design System (En construction)",
+      "5": "5. LINX - Chatbot (En construction)",
+      "4": "4. SINV Bradesco - Application Desktop B2B",
+      "3": "3. Petinder - Application Mobile",
+      "2": "2. Advisor App - Application SaaS Mobile",
+      "1": "1. Allbooks - Application Mobile",
+      "about": "À PROPOS DE MOI",
+      "links": "MES LIENS"
+    },
+    "About":{
+      "title": "À propos d'Eduardo Hessel",
+      "paragraph1": "Professionnel diplômé en Design d'Animation, poursuivant un MBA en Ingénierie Logicielle. Avec plus de 3 ans d'expérience en UX/UI Design, Product Design, Développement Front-end, j'ai travaillé dans des entreprises de taille moyenne et grande dans les secteurs de développement de sites, création d'applications pour la Gestion d'Investissements dans le Secteur Financier, Banques Digitales, Software Houses et je suis également apte à entrer dans n'importe quel domaine. J'ai contribué de manière significative à la création d'interfaces utilisateur intuitives et réactives, tests d'utilisabilité, tests sur plateformes et sites, création de textes pour chatbots, et tous les processus UX toujours avec l'objectif d'améliorer l'expérience utilisateur finale.",
+      "paragraph2": "Grande expérience dans le développement d'applications web et mobiles, me distinguant par la mise en œuvre de Design Systems et l'utilisation de bibliothèques comme Daisy UI et Shadcn UI, ainsi qu'une solide expertise dans des technologies modernes telles que NextJS, Typescript, Vue et Bootstrap. Mon travail est marqué par la capacité à créer des interfaces qui suivent des normes de style strictes, assurant cohérence et excellence à toutes les étapes du développement, de la conception à la livraison finale.",
+      "paragraph3": "Je maîtrise les systèmes Figma, Visual Studio Code, Git, GitHub, Teams, Google Meet, Trello, Clickup, Notion et Jira, avec un accent sur la promotion d'une collaboration efficace et l'optimisation des processus dans des équipes multidisciplinaires. Je suis déterminé à continuer à élargir mes compétences techniques et à contribuer au développement de produits numériques innovants qui apportent de la valeur tant pour les utilisateurs que pour les organisations. Communication, créativité, résolution de problèmes, réseautage, adaptabilité, empathie, flexibilité.",
+      "professionalExperience": "Expérience Professionnelle",
+      "polvo":{
+        "name": "Polvo Software House",
+        "position": "Product Designer - UI/UX Designer",
+        "duration": "Jan/2015 - Août/2024",
+        "type": "Freelance"
+      },
+      "smartbrain":{
+        "name": "Smartbrain",
+        "position": "Product Designer - UI/UX Designer - Développeur Front-end",
+        "duration": "Jan/2022 - Mai/2024",
+        "type": "CDI"
+      },
+      "primeo":{
+        "name": "Primeo Bank",
+        "position": "Product Designer - UI/UX Designer - Développeur Front-end",
+        "duration": "Juil/2024 - Août/2024",
+        "type": "Indépendant"
+      },
+      "tvm":{
+        "name": "Tem Vaga Mestre?",
+        "position": "Product Designer - UI/UX Designer",
+        "duration": "Mai/2024 - Juil/2024",
+        "type": "Bénévole"
+      },
+      "education": "Éducation",
+      "usp": {
+        "course": "MBA en Ingénierie Logicielle",
+        "university": "Université de São Paulo",
+        "time": "Avr/2024 - Déc/2025",
+        "status": "En cours"
+      },
+      "senac": {
+        "course": "Technologue en Design d'Animation",
+        "university": "Centre Universitaire SENAC",
+        "time": "Jan/2018 - Déc/2019",
+        "status": "Terminé"
+      },
+      "likeThings": "Les choses que j'aime le plus faire",
+      "animes":{
+        "title": "Animes Préférés",
+        "1": "Evangelion",
+        "2": "Cowboy Beebop",
+        "3": "Cyberpunk"
+      },
+      "hobbies":{
+        "title": "Hobbies Préférés",
+        "1": "Jouer aux jeux vidéo",
+        "2": "Lire",
+        "3": "Design"
+      },
+      "games":{
+        "title": "Jeux Préférés",
+        "1": "Black Myth: Wukong",
+        "2": "GTA V",
+        "3": "Rocket League"
+      },
+      "movies":{
+        "title": "Films Préférés",
+        "1": "Spider-Man: Across the Spider-Verse",
+        "2": "Rebuild of Evangelion",
+        "3": "Pacific Rim"
+      },
+      "musics":{
+        "title": "Chansons Préférées",
+        "1": "Am I Dreaming",
+        "2": "I Really Want to Stay at Your House",
+        "3": "Annihilate"
+      }
+    }
+}

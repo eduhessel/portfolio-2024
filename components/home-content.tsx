@@ -15,27 +15,35 @@ const avatarProps = {
 const projectImages = [
   {
     src: '/image-aivest.svg',
-    alt: 'Projeto Aivest, uma plataforma de investimentos.',
+    link: '',
+    key: 'aivest',
+    className: styles.blackAndWhite,
   },
   {
     src: '/image-linx.svg',
-    alt: 'Projeto Linx, um sistema de gestão para o varejo.',
+    link: '',
+    key: 'linx',
+    className: styles.blackAndWhite,
   },
   {
     src: '/image-sinv-bradesco.svg',
-    alt: 'Projeto SINV Bradesco, um sistema de investimentos.',
+    link: 'https://www.behance.net/gallery/201725767/SINV-Bradesco',
+    key: 'sinvBradesco',
   },
   {
     src: '/image-petinder.svg',
-    alt: 'Projeto Petinder, uma plataforma de adoção de pets.',
+    link: 'https://www.behance.net/gallery/199591237/Petinder-UIUX-Design-Case-Study',
+    key: 'petinder',
   },
   {
     src: '/image-advisor-app.svg',
-    alt: 'Projeto Advisor App, um aplicativo de consultoria financeira.',
+    link: 'https://www.behance.net/gallery/176413143/Advisor-App-v20',
+    key: 'advisorApp',
   },
   {
     src: '/image-allbooks.svg',
-    alt: 'Projeto AllBooks, uma biblioteca digital.',
+    link: 'https://www.behance.net/gallery/118707067/ALLBOOKS-APP-UI-DESIGN',
+    key: 'allBooks',
   },
 ];
 
@@ -58,13 +66,20 @@ export default function HomeContent() {
         <h2 id="projetos" className={styles.h2Projects}>{t('projects')}</h2>
         <div className="grid grid-cols-2">
           {projectImages.map((image, index) => (
-            <Image
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              width={375}
-              height={300}
-            />
+            <Link href={image.link} key={index} passHref target="_blank" rel="noopener noreferrer">
+              <div className={styles.imageContainer}>
+                <Image
+                  src={image.src}
+                  alt={t(`altTexts.${image.key}`)}
+                  width={375}
+                  height={300}
+                  className={image.className}
+                />
+                <div className={styles.imageOverlay}>
+                  <span>{t(`hoverTexts.${image.key}`)}</span>
+                </div>
+              </div>
+            </Link>
           ))}
         </div>
       </section>
@@ -72,15 +87,15 @@ export default function HomeContent() {
       <section aria-labelledby="meus-links">
         <h2 id="meus-links" className={styles.h2Projects}>{t('myLinks')}</h2>
         <div className={styles.iconsContainer}>
-            <Link href="https://www.linkedin.com/in/eduardo-hessel" target="_blank" rel="noopener noreferrer">
-                <LinkedInLogoIcon className={styles.iconWithLink}/>
-            </Link>
-            <Link href="https://github.com/eduhessel" target="_blank" rel="noopener noreferrer">
-                <GitHubLogoIcon className={styles.iconWithLink}/>
-            </Link>
-            <Link href="mailto:deveduardohessel@gmail.com" target="_blank" rel="noopener noreferrer">
-                <EnvelopeClosedIcon className={styles.iconWithLink}/>
-            </Link>
+          <Link href="https://www.linkedin.com/in/eduardo-hessel" target="_blank" rel="noopener noreferrer">
+            <LinkedInLogoIcon className={styles.iconWithLink}/>
+          </Link>
+          <Link href="https://github.com/eduhessel" target="_blank" rel="noopener noreferrer">
+            <GitHubLogoIcon className={styles.iconWithLink}/>
+          </Link>
+          <Link href="mailto:deveduardohessel@gmail.com" target="_blank" rel="noopener noreferrer">
+            <EnvelopeClosedIcon className={styles.iconWithLink}/>
+          </Link>
         </div>
       </section>
     </main>

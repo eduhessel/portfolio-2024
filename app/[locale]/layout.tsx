@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import TopMenu from "@/components/menu-top";
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
+import Footer from "@/components/footer";
 
 const robotoMono = Roboto_Mono ({ subsets: ["latin"] });
 
@@ -34,10 +35,7 @@ export default async function LocaleLayout({
           >
             <TopMenu/>
             {children}
-            <div className="flex flex-col items-center text-center justify-center gap-4 p-8">
-              <p>Site desenvolvido utilizando Nextjs 14, Tailwind, ShadcnUI e Figma.</p>
-              <p>Todos os direitos reservados. © 2024 Eduardo Hessel</p>
-            </div>
+            <Footer/>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

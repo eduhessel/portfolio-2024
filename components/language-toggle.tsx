@@ -4,12 +4,7 @@ import * as React from "react"
 import { Languages } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Link, usePathname, useRouter } from '@/navigation';
 
 export function LanguageToggle() {
@@ -33,6 +28,21 @@ export function LanguageToggle() {
             <DropdownMenuItem>
                 <Link href={pathname} locale="en" className="w-full">
                     English
+                </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+                <Link href={pathname} locale="es" className="w-full">
+                    Español
+                </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+                <Link href={pathname} locale="fr" className="w-full">
+                    Français
+                </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+                <Link href={pathname} locale="ja" className="w-full">
+                    日本語
                 </Link>
             </DropdownMenuItem>
         </DropdownMenuContent>
