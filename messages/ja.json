@@ -2,12 +2,12 @@
     "HamburguerMenu":{
       "home": "ホーム画面",
       "about": "私について",
-      "6": "6. AIVest - デザインシステム (構築中)",
-      "5": "5. LINX - チャットボット (構築中)",
-      "4": "4. SINV Bradesco - B2Bデスクトップアプリ",
-      "3": "3. Petinder - モバイルアプリ",
-      "2": "2. Advisor App - SaaSモバイルアプリ",
-      "1": "1. Allbooks - モバイルアプリ"
+      "6": "6. AIVest",
+      "5": "5. LINX",
+      "4": "4. SINV Bradesco",
+      "3": "3. Petinder",
+      "2": "2. Advisor App",
+      "1": "1. Allbooks"
     },
     "Footer":{
       "tools": "Nextjs 14、Tailwind、ShadcnUI、Figmaを使用して開発されたサイトです。",
