@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Link } from "@/navigation";
 import { useTranslations } from 'next-intl';
+import { EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 export function MenuHamburguer() {
     const t = useTranslations('HamburguerMenu');
@@ -58,6 +59,24 @@ export function MenuHamburguer() {
         <DropdownMenuItem>
             <Link href={"https://www.behance.net/gallery/118707067/ALLBOOKS-APP-UI-DESIGN"} className="w-full" target="_blank" rel="noopener noreferrer">
                 {t("1")}
+            </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+            <Link href={"https://www.linkedin.com/in/eduardo-hessel"} className="w-full flex gap-2 items-center" target="_blank" rel="noopener noreferrer">
+              <LinkedInLogoIcon/>
+              {t("linkedin")}
+            </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+            <Link href={"https://github.com/eduhessel"} className="w-full flex gap-2 items-center" target="_blank" rel="noopener noreferrer">
+              <GitHubLogoIcon/>
+              {t("github")}
+            </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+            <Link href={"mailto:deveduardohessel@gmail.com"} className="w-full flex gap-2 items-center" target="_blank" rel="noopener noreferrer">
+              <EnvelopeClosedIcon/>
+              {t("e-mail")}
             </Link>
         </DropdownMenuItem>
       </DropdownMenuContent>

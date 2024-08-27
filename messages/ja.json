@@ -7,7 +7,10 @@
       "4": "4. SINV Bradesco",
       "3": "3. Petinder",
       "2": "2. Advisor App",
-      "1": "1. Allbooks"
+      "1": "1. Allbooks",
+      "linkedin": "リンケジン",
+      "github": "ギットハブ",
+      "e-mail": "メール"
     },
     "Footer":{
       "tools": "Nextjs 14、Tailwind、ShadcnUI、Figmaを使用して開発されたサイトです。",

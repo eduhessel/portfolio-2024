@@ -7,7 +7,10 @@
     "4": "4. SINV Bradesco",
     "3": "3. Petinder",
     "2": "2. Advisor App",
-    "1": "1. Allbooks"
+    "1": "1. Allbooks",
+    "linkedin": "Linkedin",
+    "github": "GitHub",
+    "e-mail": "E-mail"
   },
   "Footer":{
     "tools": "Website developed using Nextjs 14, Tailwind, ShadcnUI and Figma.",
