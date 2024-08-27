@@ -32,7 +32,7 @@ export function MenuHamburguer() {
             </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-            <Link href={""} className="w-full h-full">
+            <Link href={"https://zeroheight.com/73787951a/n/7466ec"} className="w-full h-full" target="_blank" rel="noopener noreferrer">
                 {t("6")}
             </Link>
         </DropdownMenuItem>

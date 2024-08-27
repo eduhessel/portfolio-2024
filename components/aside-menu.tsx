@@ -14,7 +14,9 @@ export default function AsideMenu(){
             <Link href={"/"}>
                 <h2 className={styles.h2WithLink}>{t('projects')}</h2>
             </Link>
-            <p className={styles.pWithLink}>{t('6')}</p>
+            <Link href="https://zeroheight.com/73787951a/n/7466ec" target="_blank" rel="noopener noreferrer">
+                <p className={styles.pWithLink}>{t('6')}</p>
+            </Link>
             <p className={styles.pWithLink}>{t('5')}</p>
             <Link href="https://www.behance.net/gallery/201725767/SINV-Bradesco" target="_blank" rel="noopener noreferrer">
                 <p className={styles.pWithLink}>{t('4')}</p>
