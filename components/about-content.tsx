@@ -16,7 +16,7 @@ export default function AboutContent(){
     return(
         <main className={styles.container}>
             <Image {...avatarProps} />
-            <section>
+            <section className='flex flex-col gap-4'>
                 <h1>{t("title")}</h1>
                 <div className='flex flex-col gap-4'>
                     <p>{t("paragraph1")}</p>
