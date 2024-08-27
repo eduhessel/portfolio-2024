@@ -1,9 +1,11 @@
 .menuContainer{
-    background-color: hsl(var(--foreground)/ 0.1);
+    background-color: hsl(var(--primary-foreground));
     width: 100%;
     z-index: 1000;
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
 }
 
 .menuContent{
