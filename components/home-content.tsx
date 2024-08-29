@@ -15,7 +15,7 @@ const avatarProps = {
 const projectImages = [
   {
     src: '/cephalopod-ui-design-system.png',
-    link: '',
+    link: 'https://zeroheight.com/73787951a/p/22b1a2-cephalopod-design-system',
     key: 'cephalopodUi',
   },
   {
