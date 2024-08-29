@@ -64,14 +64,14 @@ export default function HomeContent() {
 
       <section aria-labelledby="projetos" className="flex flex-col">
         <h2 id="projetos" className={styles.h2Projects}>{t('projects')}</h2>
-        <div className="grid grid-cols-2">
+        <div className={styles.projectsContainer}>
           {projectImages.map((image, index) => (
             <Link href={image.link} key={index} passHref target="_blank" rel="noopener noreferrer">
               <div className={styles.imageContainer}>
                 <Image
                   src={image.src}
                   alt={t(`altTexts.${image.key}`)}
-                  width={375}
+                  width={50000}
                   height={300}
                   className={image.className}
                 />

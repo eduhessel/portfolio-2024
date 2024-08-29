@@ -10,6 +10,10 @@
     @apply flex gap-4 pl-4;
 }
 
+.projectsContainer{
+    @apply grid grid-cols-2;
+}
+
 .iconWithLink{
     height: 24px;
     width: 24px;
@@ -63,8 +67,16 @@
         @apply pl-0;
     }
 
+    .imageContainer{
+        width: 100%;
+    }
+
     .iconsContainer{
         @apply pl-0;
+    }
+
+    .projectsContainer{
+        @apply grid grid-cols-1;
     }
 
     .iconWithLink{
@@ -87,6 +99,10 @@
 
     .iconsContainer{
         @apply pl-0;
+    }
+
+    .projectsContainer{
+        @apply grid grid-cols-1;
     }
 
     .iconWithLink{
