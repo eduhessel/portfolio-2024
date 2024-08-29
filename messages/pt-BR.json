@@ -2,7 +2,7 @@
   "HamburguerMenu":{
     "home": "Tela inicial",
     "about": "Sobre mim",
-    "6": "6. Polvo Design System",
+    "6": "6. Cephalopod UI",
     "5": "5. LINX",
     "4": "4. SINV Bradesco",
     "3": "3. Petinder",
@@ -24,7 +24,7 @@
     "projects": "Projetos",
     "myLinks": "Meus Links",
     "hoverTexts": {
-      "aivest": "Design System - Projeto em desenvolvimento",
+      "cephalopodUi": "Design System",
       "linx": "Chatbot - Projeto em desenvolvimento",
       "sinvBradesco": "UI/UX e gerenciamento do projeto em conjunto com a equipe do Bradesco",
       "petinder": "UX Research e UI Design",
@@ -32,7 +32,7 @@
       "allBooks": "UI Design"
     },
     "altTexts": {
-      "aivest": "Imagem referente ao projeto Design System - Projeto Polvo Design System",
+      "cephalopodUi": "Imagem referente ao projeto Design System - Projeto Cephalopod UI Design System",
       "linx": "Imagem referente ao projeto Chatbot - Projeto em desenvolvimento",
       "sinvBradesco": "Imagem referente ao projeto UI/UX e gerenciamento do projeto em conjunto com a equipe do Bradesco aplicativo para computador",
       "petinder": "Imagem referente ao projeto UX Research e UI Design Petinder aplicativo mobile",
@@ -42,7 +42,7 @@
   },
   "AsideMenu":{
     "projects": "TELA INICIAL",
-    "6": "6. Polvo - Design System (Em construção)",
+    "6": "6. Cephalopod UI - Design System",
     "5": "5. LINX - Chatbot (Em construção)",
     "4": "4. SINV Bradesco - Desktop B2B App",
     "3": "3. Petinder - Mobile App",

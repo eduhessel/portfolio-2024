@@ -14,10 +14,9 @@ const avatarProps = {
 
 const projectImages = [
   {
-    src: '/image-aivest.svg',
+    src: '/cephalopod-ui-design-system.png',
     link: '',
-    key: 'aivest',
-    className: styles.blackAndWhite,
+    key: 'cephalopodUi',
   },
   {
     src: '/image-linx.svg',
