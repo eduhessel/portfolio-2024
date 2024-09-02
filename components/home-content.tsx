@@ -19,23 +19,23 @@ const projectImages = [
     key: 'cephalopodUi',
   },
   {
-    src: '/image-linx.svg',
+    src: '/logo-ascent-design-system-logo.png',
     link: '',
-    key: 'linx',
-    className: styles.blackAndWhite,
+    key: 'ascent',
+    // className: styles.blackAndWhite,
   },
   {
-    src: '/image-sinv-bradesco.svg',
+    src: '/logo-sinv-app.png',
     link: 'https://www.behance.net/gallery/201725767/SINV-Bradesco',
     key: 'sinvBradesco',
   },
   {
-    src: '/image-petinder.svg',
+    src: '/logo-petinder-app.png',
     link: 'https://www.behance.net/gallery/199591237/Petinder-UIUX-Design-Case-Study',
     key: 'petinder',
   },
   {
-    src: '/image-advisor-app.svg',
+    src: '/logo-advisor-app.png',
     link: 'https://www.behance.net/gallery/176413143/Advisor-App-v20',
     key: 'advisorApp',
   },
@@ -72,7 +72,7 @@ export default function HomeContent() {
                   alt={t(`altTexts.${image.key}`)}
                   width={50000}
                   height={300}
-                  className={image.className}
+                  // className={image.className}
                 />
                 <div className={styles.imageOverlay}>
                   <span>{t(`hoverTexts.${image.key}`)}</span>

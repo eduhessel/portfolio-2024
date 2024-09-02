@@ -3,7 +3,7 @@
       "home": "ホーム画面",
       "about": "私について",
       "6": "6. Cephalopod UI",
-      "5": "5. LINX",
+      "5": "5. Ascent UI Kit",
       "4": "4. SINV Bradesco",
       "3": "3. Petinder",
       "2": "2. Advisor App",
@@ -25,7 +25,7 @@
       "myLinks": "私のリンク",
       "hoverTexts": {
         "cephalopodUi": "デザインシステム",
-        "linx": "チャットボット - 開発中のプロジェクト",
+        "ascent": "チャットボット",
         "sinvBradesco": "UI/UXデザインとブラデスコチームとのプロジェクト管理",
         "petinder": "UXリサーチとUIデザイン",
         "advisorApp": "UI/UXデザイン",
@@ -33,7 +33,7 @@
       },
       "altTexts": {
         "cephalopodUi": "デザインシステムプロジェクト - Cephalopod UIプロジェクトに関連する画像",
-        "linx": "チャットボットプロジェクト - 開発中のプロジェクトに関連する画像",
+        "ascent": "デザインシステムプロジェクト - Ascent プロジェクトに関連する画像",
         "sinvBradesco": "ブラデスコチームとのUI/UXデザインとプロジェクト管理プロジェクトに関連する画像 - デスクトップアプリケーション",
         "petinder": "UXリサーチとUIデザインプロジェクト - Petinderモバイルアプリに関連する画像",
         "advisorApp": "UI/UXデザインプロジェクト - Advisorモバイルアプリに関連する画像",
@@ -43,7 +43,7 @@
     "AsideMenu":{
       "projects": "ホーム画面",
       "6": "6. Cephalopod UI - デザインシステム",
-      "5": "5. LINX - チャットボット (構築中)",
+      "5": "5. Ascent",
       "4": "4. SINV Bradesco - B2Bデスクトップアプリ",
       "3": "3. Petinder - モバイルアプリ",
       "2": "2. Advisor App - SaaSモバイルアプリ",
