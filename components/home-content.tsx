@@ -20,7 +20,7 @@ const projectImages = [
   },
   {
     src: '/logo-ascent-design-system-logo.png',
-    link: '',
+    link: 'https://www.figma.com/design/zwWc9haKkAiv4xj7izygMS/Ascent-Design-System?node-id=2-697&t=A6sp5Ut7zydXwxby-1',
     key: 'ascent',
     // className: styles.blackAndWhite,
   },
