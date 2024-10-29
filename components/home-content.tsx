@@ -82,8 +82,8 @@ export default function HomeContent() {
                 <Image
                   src={image.src}
                   alt={t(`altTexts.${image.key}`)}
-                  width={50000}
-                  height={300}
+                  width={375}
+                  height={375}
                   // className={image.className}
                 />
                 <div className={styles.imageOverlay}>
