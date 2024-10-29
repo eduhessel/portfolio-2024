@@ -11,9 +11,6 @@ import { useTranslations } from "next-intl";
 const avatarProps = {
   src: "/image-avatar-dudu.png",
   alt: "Foto de Eduardo Hessel, um jovem Designer e Desenvolvedor.",
-  width: 150,
-  height: 300,
-  className: "rounded-full shadow-md",
 };
 
 const projectImages = [
@@ -56,7 +53,9 @@ export default function HomeContent() {
   return (
     <main className="w-full flex flex-col gap-8">
       <section aria-labelledby="descrição" className={styles.menuSection}>
-        <Image {...avatarProps} />
+        <div className="relative w-[150px] h-[150px]">
+          <Image className="rounded-full shadow-md" fill {...avatarProps} />
+        </div>
         <header>
           <h1>{t("title")}</h1>
           <h2>{t("subtitle")}</h2>
@@ -79,13 +78,14 @@ export default function HomeContent() {
               rel="noopener noreferrer"
             >
               <div className={styles.imageContainer}>
-                <Image
-                  src={image.src}
-                  alt={t(`altTexts.${image.key}`)}
-                  width={375}
-                  height={375}
-                  // className={image.className}
-                />
+                <div className="relative w-[375px] h-[375px]">
+                  <Image
+                    src={image.src}
+                    alt={t(`altTexts.${image.key}`)}
+                    fill
+                    // className={image.className}
+                  />
+                </div>
                 <div className={styles.imageOverlay}>
                   <span>{t(`hoverTexts.${image.key}`)}</span>
                 </div>
