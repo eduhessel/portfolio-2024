@@ -3,11 +3,12 @@ import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import TopMenu from "@/components/menu-top";
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 import Footer from "@/components/footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const robotoMono = Roboto_Mono ({ subsets: ["latin"] });
+const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Eduardo Hessel's Portfolio",
@@ -16,10 +17,10 @@ export const metadata: Metadata = {
 
 export default async function LocaleLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }>) {
   const messages = await getMessages();
 
@@ -33,9 +34,10 @@ export default async function LocaleLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <TopMenu/>
+            <TopMenu />
             {children}
-            <Footer/>
+            <SpeedInsights />
+            <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
