@@ -7,6 +7,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Footer from "@/components/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
@@ -37,6 +38,7 @@ export default async function LocaleLayout({
             <TopMenu />
             {children}
             <SpeedInsights />
+            <Analytics />
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
