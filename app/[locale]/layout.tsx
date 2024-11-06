@@ -8,6 +8,7 @@ import { getMessages } from "next-intl/server";
 import Footer from "@/components/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
+import { Toaster } from "@/components/ui/toaster";
 
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
@@ -41,6 +42,7 @@ export default async function LocaleLayout({
             <Analytics />
             <Footer />
           </ThemeProvider>
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

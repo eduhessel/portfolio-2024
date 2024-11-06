@@ -13,6 +13,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { useToast } from "@/components/use-toast";
+import { Eye, EyeOff } from "react-feather";
 
 interface ModalPasswordProps {
   isOpen: boolean;
@@ -28,14 +30,29 @@ export function ModalPassword({
   const t = useTranslations("HomePage.modalPassword");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const correctPassword = "eduardohessel@2024";
+
+  const { toast } = useToast();
 
   const handleSubmit = () => {
     if (password === correctPassword && targetLink) {
       window.open(targetLink, "_blank");
       onClose();
+      toast({
+        title: "Sucesso!",
+        description: "A página foi aberta em uma nova aba do navegador.",
+        variant: "success",
+        duration: 1500,
+      });
     } else {
       setError("senha incorreta");
+      toast({
+        title: "Erro!",
+        description: "Senha incorreta. Tente novamente.",
+        variant: "destructive",
+        duration: 1500,
+      });
     }
   };
 
@@ -56,14 +73,23 @@ export function ModalPassword({
             <Label htmlFor="name" className="text-right">
               {t("label")}
             </Label>
-            <Input
-              id="password"
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Inserir senha"
-              className="col-span-3"
-            />
+            <div className="relative col-span-3">
+              <Input
+                id="password"
+                type={showPassword ? "text" : "password"}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Inserir senha"
+                className="pr-12"
+              />
+              <button
+                type="button"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2"
+                onClick={() => setShowPassword(!showPassword)} // Alterna o estado
+              >
+                {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}{" "}
+              </button>
+            </div>
           </div>
         </div>
         <DialogFooter>
