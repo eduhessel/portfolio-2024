@@ -1,5 +1,5 @@
 {
-  "HamburguerMenu":{
+  "HamburguerMenu": {
     "home": "Tela inicial",
     "about": "Sobre mim",
     "6": "6. Cephalopod UI",
@@ -12,7 +12,7 @@
     "github": "GitHub",
     "e-mail": "E-mail"
   },
-  "Footer":{
+  "Footer": {
     "tools": "Site desenvolvido utilizando Nextjs 14, Tailwind, ShadcnUI e Figma.",
     "rights": "Todos os direitos reservados. © 2024 Eduardo Hessel"
   },
@@ -38,9 +38,15 @@
       "petinder": "Imagem referente ao projeto UX Research e UI Design Petinder aplicativo mobile",
       "advisorApp": "Imagem referente ao projeto UI/UX Design Advisor aplicativo mobile",
       "allBooks": "Imagem referente ao projeto UI Design Allbooks aplicativo mobile"
+    },
+    "modalPassword": {
+      "title": "Senha de proteção",
+      "description": "Fale diretamente comigo para obter a senha de acesso. Acesso liberado apenas para recrutadores e clientes.",
+      "label": "Senha",
+      "button": "Acessar"
     }
   },
-  "AsideMenu":{
+  "AsideMenu": {
     "projects": "TELA INICIAL",
     "6": "6. Cephalopod UI - Design System",
     "5": "5. Ascent - UI Kit",
@@ -51,31 +57,31 @@
     "about": "SOBRE MIM",
     "links": "MEUS LINKS"
   },
-  "About":{
+  "About": {
     "title": "Sobre Eduardo Hessel",
     "paragraph1": "Profissional Graduado em Design De Animação, cursando MBA em Engenharia De Software. Com mais de 3 anos de experiência em UX/UI Design, Product Design, Desenvolvimento Front-end, tenho atuado em empresas de médio e grande porte nos segmentos desenvolvimento de sites, criação de aplicativos para Gestão de Investimentos no Setor Financeiro, Bancos Digitais, Software Houses e também estou capacitado a entrar em qualquer área, contribui significativamente para a criação de interfaces de usuário intuitivas e responsivas, testes de usabilidade, testes nas plataformas e sites, criação de textos para chatbots, e todos processos de UX sempre com o objetivo de aprimorar a experiência do usuário final.",
     "paragraph2": "Vasta experiência em desenvolvimento de aplicações web e mobile, destacando-me pela implementação de Design Systems e uso de bibliotecas como Daisy UI e Shadcn UI, além de sólida expertise em tecnologias modernas como NextJS, Typescript, Vue e Bootstrap. Minha atuação é marcada pela capacidade de criar interfaces que seguem rigorosos padrões de estilo, assegurando consistência e excelência em todas as etapas do desenvolvimento, desde a concepção até a entrega final.",
     "paragraph3": "Tenho domínio dos Sistemas Figma, Visual Studio Code, Git, GitHub, Teams, Google Meet, Trello, Clickup, Notion e Jira, com foco em promover uma colaboração eficaz e a otimização dos processos em equipes multidisciplinares. Estou comprometido em continuar a expandir minhas habilidades técnicas e contribuir para o desenvolvimento de produtos digitais inovadores que agreguem valor tanto para os usuários quanto para as organizações. Comunicação, criatividade, resolução de problemas, networking, adaptabilidade, empatia, flexibilidade.",
     "professionalExperience": "Experiência Profissional",
-    "polvo":{
+    "polvo": {
       "name": "Polvo Software House",
       "position": "Product Designer - UI/UX Designer",
       "duration": "Jan/2015 - Ago/2024",
       "type": "Freelance"
     },
-    "smartbrain":{
+    "smartbrain": {
       "name": "Smartbrain",
       "position": "Product Designer - UI/UX Designer - Desenvolvedor Front-end",
       "duration": "Jan/2022 - Mai/2024",
       "type": "CLT"
     },
-    "primeo":{
+    "primeo": {
       "name": "Primeo Bank",
       "position": "Product Designer - UI/UX Designer - Desenvolvedor Front-end",
       "duration": "Jul/2024 - Ago/2024",
       "type": "PJ"
     },
-    "tvm":{
+    "tvm": {
       "name": "Tem Vaga Mestre?",
       "position": "Product Designer - UI/UX Designer",
       "duration": "Mai/2024 - Jul/2024",
@@ -95,31 +101,31 @@
       "status": "Concluído"
     },
     "likeThings": "As coisas que mais gosto de fazer",
-    "animes":{
+    "animes": {
       "title": "Animes Favoritos",
       "1": "Evangelion",
       "2": "Cowboy Beebop",
       "3": "Cyberpunk"
     },
-    "hobbies":{
+    "hobbies": {
       "title": "Hobbies Favoritos",
       "1": "Jogar video game",
       "2": "Ler",
       "3": "Design"
     },
-    "games":{
+    "games": {
       "title": "Jogos Favoritos",
       "1": "Black Myth: Wukong",
       "2": "GTA V",
       "3": "Rocket League"
     },
-    "movies":{
+    "movies": {
       "title": "Filmes Favoritos",
       "1": "Homem-Aranha: Através do Aranhaverso",
       "2": "Rebuild of Evangelion",
       "3": "Círculo de Fogo"
     },
-    "musics":{
+    "musics": {
       "title": "Músicas Favoritas",
       "1": "Am I Dreaming",
       "2": "I Really Want to Stay at Your House",

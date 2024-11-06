@@ -1,5 +1,5 @@
 {
-  "HamburguerMenu":{
+  "HamburguerMenu": {
     "home": "Home",
     "about": "About",
     "6": "6. Cephalopod UI",
@@ -12,7 +12,7 @@
     "github": "GitHub",
     "e-mail": "E-mail"
   },
-  "Footer":{
+  "Footer": {
     "tools": "Website developed using Nextjs 14, Tailwind, ShadcnUI and Figma.",
     "rights": "All rights reserved. © 2024 Eduardo Hessel"
   },
@@ -38,6 +38,12 @@
       "petinder": "Image related to the UX Research and UI Design project - Petinder mobile app",
       "advisorApp": "Image related to the UI/UX Design project - Advisor mobile app",
       "allBooks": "Image related to the UI Design project - Allbooks mobile app"
+    },
+    "modalPassword": {
+      "title": "Protection password",
+      "description": "Speak directly to me to obtain the access password. Access only available to recruiters and clients.",
+      "label": "Password",
+      "button": "Access"
     }
   },
   "AsideMenu": {
