@@ -1,51 +1,55 @@
-.menuContainer{
-    padding: 16px;
-    width: 100%;
-    max-width: 250px;
-    background-color: hsl(var(--primary)/0.02);
-    height: 100%;
-    @apply flex flex-col gap-4;
+.menuContainer {
+  padding: 24px;
+  width: 100%;
+  max-width: 250px;
+  background-color: hsl(var(--primary) / 0.02);
+  height: 100%;
+  @apply flex flex-col;
 }
 
-.h2WithLink{
-    cursor: pointer;
-    transition: color 0.3s ease;
-    &:hover{
-        color: hsl(var(--primary)/0.5);
-        transition: color 0.3s ease;
-    }
+.menuContent {
+  @apply flex flex-col gap-3;
 }
 
-.pWithLink{
-    color: hsl(var(--primary)/0.5);
-    cursor: pointer;
+.h2WithLink {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  &:hover {
+    color: hsl(var(--primary) / 0.5);
     transition: color 0.3s ease;
-    &:hover{
-        color: hsl(var(--primary));
-        transition: color 0.3s ease;
-    }
+  }
 }
 
-.iconWithLink{
-    height: 24px;
-    width: 24px;
-    color: hsl(var(--primary)/0.5);
-    cursor: pointer;
+.pWithLink {
+  color: hsl(var(--primary) / 0.5);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  &:hover {
+    color: hsl(var(--primary));
     transition: color 0.3s ease;
-    &:hover{
-        color: hsl(var(--primary));
-        transition: color 0.3s ease;
-    }
+  }
+}
+
+.iconWithLink {
+  height: 24px;
+  width: 24px;
+  color: hsl(var(--primary) / 0.5);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  &:hover {
+    color: hsl(var(--primary));
+    transition: color 0.3s ease;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .menuContainer{
-        display: none;
-    }
+  .menuContainer {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .menuContainer{
-        display: none;
-    }
+  .menuContainer {
+    display: none;
+  }
 }

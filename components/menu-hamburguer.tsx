@@ -1,15 +1,24 @@
-"use client"
+"use client";
 
 import * as React from "react";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Link } from "@/navigation";
-import { useTranslations } from 'next-intl';
-import { EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { useTranslations } from "next-intl";
+import {
+  EnvelopeClosedIcon,
+  GitHubLogoIcon,
+  LinkedInLogoIcon,
+} from "@radix-ui/react-icons";
 
 export function MenuHamburguer() {
-    const t = useTranslations('HamburguerMenu');
+  const t = useTranslations("HamburguerMenu");
 
   return (
     <DropdownMenu>
@@ -22,16 +31,16 @@ export function MenuHamburguer() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="start">
         <DropdownMenuItem>
-            <Link href={"/"} className="w-full h-full">
-                {t("home")}
-            </Link>
+          <Link href={"/"} className="w-full h-full">
+            {t("home")}
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-            <Link href={"/sobre"} className="w-full h-full">
-                {t("about")}
-            </Link>
+          <Link href={"/sobre"} className="w-full h-full">
+            {t("about")}
+          </Link>
         </DropdownMenuItem>
-        <DropdownMenuItem>
+        {/* <DropdownMenuItem>
             <Link href={"https://zeroheight.com/73787951a/p/22b1a2-cephalopod-design-system"} className="w-full h-full" target="_blank" rel="noopener noreferrer">
                 {t("6")}
             </Link>
@@ -60,26 +69,41 @@ export function MenuHamburguer() {
             <Link href={"https://www.behance.net/gallery/118707067/ALLBOOKS-APP-UI-DESIGN"} className="w-full h-full" target="_blank" rel="noopener noreferrer">
                 {t("1")}
             </Link>
+        </DropdownMenuItem> */}
+        <DropdownMenuItem>
+          <Link
+            href={"https://www.linkedin.com/in/eduardo-hessel"}
+            className="w-full h-full flex gap-2 items-center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedInLogoIcon />
+            {t("linkedin")}
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-            <Link href={"https://www.linkedin.com/in/eduardo-hessel"} className="w-full h-full flex gap-2 items-center" target="_blank" rel="noopener noreferrer">
-              <LinkedInLogoIcon/>
-              {t("linkedin")}
-            </Link>
+          <Link
+            href={"https://github.com/eduhessel"}
+            className="w-full h-full flex gap-2 items-center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GitHubLogoIcon />
+            {t("github")}
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-            <Link href={"https://github.com/eduhessel"} className="w-full h-full flex gap-2 items-center" target="_blank" rel="noopener noreferrer">
-              <GitHubLogoIcon/>
-              {t("github")}
-            </Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-            <Link href={"mailto:deveduardohessel@gmail.com"} className="w-full h-full flex gap-2 items-center" target="_blank" rel="noopener noreferrer">
-              <EnvelopeClosedIcon/>
-              {t("e-mail")}
-            </Link>
+          <Link
+            href={"mailto:deveduardohessel@gmail.com"}
+            className="w-full h-full flex gap-2 items-center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <EnvelopeClosedIcon />
+            {t("e-mail")}
+          </Link>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }

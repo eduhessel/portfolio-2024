@@ -44,8 +44,8 @@ export default function HomeImageButton() {
   ];
 
   const handleImageClick = (link: string) => {
-    setSelectedLink(link); // Define o link da imagem clicada
-    setIsModalOpen(true); // Abre o modal
+    setSelectedLink(link);
+    setIsModalOpen(true);
   };
   return (
     <>
