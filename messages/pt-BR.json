@@ -43,7 +43,18 @@
       "title": "Senha de proteção",
       "description": "Fale diretamente comigo para obter a senha de acesso. Acesso liberado apenas para recrutadores e clientes.",
       "label": "Senha",
-      "button": "Acessar"
+      "button": "Acessar",
+      "placeholder": "Inserir senha de acesso",
+      "toast": {
+        "success": {
+          "title": "Sucesso!",
+          "description": "A página foi aberta em uma nova aba do navegador."
+        },
+        "error": {
+          "title": "Erro!",
+          "description": "Senha incorreta. Tente novamente."
+        }
+      }
     }
   },
   "AsideMenu": {

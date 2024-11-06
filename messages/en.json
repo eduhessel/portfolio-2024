@@ -43,7 +43,18 @@
       "title": "Protection password",
       "description": "Speak directly to me to obtain the access password. Access only available to recruiters and clients.",
       "label": "Password",
-      "button": "Access"
+      "button": "Access",
+      "placeholder": "Enter password",
+      "toast": {
+        "success": {
+          "title": "Success!",
+          "description": "The page was opened in a new browser tab."
+        },
+        "error": {
+          "title": "Error!",
+          "description": "Incorrect password. Please try again."
+        }
+      }
     }
   },
   "AsideMenu": {

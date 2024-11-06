@@ -40,16 +40,16 @@ export function ModalPassword({
       window.open(targetLink, "_blank");
       onClose();
       toast({
-        title: "Sucesso!",
-        description: "A página foi aberta em uma nova aba do navegador.",
+        title: t("toast.success.title"),
+        description: t("toast.success.description"),
         variant: "success",
         duration: 1500,
       });
     } else {
       setError("senha incorreta");
       toast({
-        title: "Erro!",
-        description: "Senha incorreta. Tente novamente.",
+        title: t("toast.error.title"),
+        description: t("toast.error.description"),
         variant: "destructive",
         duration: 1500,
       });
@@ -79,7 +79,7 @@ export function ModalPassword({
                 type={showPassword ? "text" : "password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="Inserir senha"
+                placeholder={t("placeholder")}
                 className="pr-12"
               />
               <button
