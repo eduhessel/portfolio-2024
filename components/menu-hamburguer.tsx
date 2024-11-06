@@ -81,7 +81,7 @@ export function MenuHamburguer() {
             {t("linkedin")}
           </Link>
         </DropdownMenuItem>
-        <DropdownMenuItem>
+        {/* <DropdownMenuItem>
           <Link
             href={"https://github.com/eduhessel"}
             className="w-full h-full flex gap-2 items-center"
@@ -91,7 +91,7 @@ export function MenuHamburguer() {
             <GitHubLogoIcon />
             {t("github")}
           </Link>
-        </DropdownMenuItem>
+        </DropdownMenuItem> */}
         <DropdownMenuItem>
           <Link
             href={"mailto:deveduardohessel@gmail.com"}

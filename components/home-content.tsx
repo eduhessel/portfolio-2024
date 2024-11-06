@@ -52,13 +52,13 @@ export default function HomeContent() {
           >
             <LinkedInLogoIcon className={styles.iconWithLink} />
           </Link>
-          <Link
+          {/* <Link
             href="https://github.com/eduhessel"
             target="_blank"
             rel="noopener noreferrer"
           >
             <GitHubLogoIcon className={styles.iconWithLink} />
-          </Link>
+          </Link> */}
           <Link
             href="mailto:deveduardohessel@gmail.com"
             target="_blank"
