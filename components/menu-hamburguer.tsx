@@ -35,11 +35,11 @@ export function MenuHamburguer() {
             {t("home")}
           </Link>
         </DropdownMenuItem>
-        <DropdownMenuItem>
+        {/* <DropdownMenuItem>
           <Link href={"/sobre"} className="w-full h-full">
             {t("about")}
           </Link>
-        </DropdownMenuItem>
+        </DropdownMenuItem> */}
         {/* <DropdownMenuItem>
             <Link href={"https://zeroheight.com/73787951a/p/22b1a2-cephalopod-design-system"} className="w-full h-full" target="_blank" rel="noopener noreferrer">
                 {t("6")}

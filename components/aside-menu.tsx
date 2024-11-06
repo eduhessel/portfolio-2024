@@ -36,9 +36,9 @@ export default function AsideMenu() {
                 <p className={styles.pWithLink}>{t('1')}</p>
             </Link> */}
         {/* Sobre mim */}
-        <Link href={`/${locale}/sobre`}>
+        {/* <Link href={`/${locale}/sobre`}>
           <h2 className={styles.h2WithLink}>{t("about")}</h2>
-        </Link>
+        </Link> */}
         <h2>{t("links")}</h2>
         {/* Ícones */}
         <div className="flex gap-4">
