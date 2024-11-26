@@ -14,6 +14,22 @@
     @apply grid grid-cols-2;
 }
 
+.buttonsContainer{
+    @apply ml-4 flex flex-col gap-2;
+    .buttonPortfolio{
+        text-align: start;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        @apply justify-between;
+        &:hover{
+            background-color: hsl(var(--accent));
+            color: hsl(var(--accent-foreground));
+            padding: 8px 32px;
+        }
+    }
+}
+
 .iconWithLink{
     height: 24px;
     width: 24px;
@@ -27,9 +43,8 @@
 }
 
 .imageContainer {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .imageOverlay {
@@ -103,6 +118,17 @@
 
     .projectsContainer{
         @apply grid grid-cols-1;
+    }
+
+    .buttonsContainer{
+        @apply ml-0;
+        .buttonPortfolio{
+            text-align: start;
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            @apply justify-between;
+        }
     }
 
     .iconWithLink{

@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import styles from "@/styles/home-content.module.css";
 import { ModalPassword } from "./modal-password";
+import { LockClosedIcon } from "@radix-ui/react-icons";
 
 export default function HomeImageButton() {
   const t = useTranslations("HomePage");
@@ -52,12 +53,7 @@ export default function HomeImageButton() {
       {projectImages.map((image, index) => (
         <button key={index} onClick={() => handleImageClick(image.link)}>
           <div className={styles.imageContainer}>
-            <div className="relative w-[375px] h-[375px]">
-              <Image src={image.src} alt={t(`altTexts.${image.key}`)} fill />
-            </div>
-            <div className={styles.imageOverlay}>
-              <span>{t(`hoverTexts.${image.key}`)}</span>
-            </div>
+            <button className={styles.buttonPortfolio}><h4>{t(`altTexts.${image.key}`)}</h4><LockClosedIcon className="h-4 w-4"/></button>
           </div>
         </button>
       ))}

@@ -14,7 +14,7 @@ export default function TopMenu(){
                 </div>
                 <div className="flex gap-4">
                     <LanguageToggle/>
-                    <ModeToggle/>
+                    {/* <ModeToggle/> */}
                 </div>
             </div>
         </div>

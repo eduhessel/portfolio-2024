@@ -23,6 +23,9 @@
     "rollDown": "Scroll down and check out my projects!",
     "projects": "Projects",
     "myLinks": "My Links",
+    "project1": "teste",
+    "project2": "teste2",
+    "project3": "teste3",
     "hoverTexts": {
       "cephalopodUi": "Design System",
       "ascent": "UI Kit",
