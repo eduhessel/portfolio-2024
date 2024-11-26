@@ -10,7 +10,7 @@ export default function Home() {
           {/* <AsideMenu/> */}
           <HomeContent/>
           <div className="">
-            <Image className="shadow-md" width={700} height={700} src={'/image-avatar-dudu.png'} alt="teste"/>
+            <Image className="shadow-md" width={700} height={700} src={'/image-duwdu-profile.png'} alt="Imagem Eduardo Hessel"/>
           </div>
         </div>
       </div>
