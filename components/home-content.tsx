@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "@/styles/home-content.module.css";
 import Link from "next/link";
 import { ModalPassword } from "./modal-password";
+import { useLocale } from "next-intl";
 import {
   EnvelopeClosedIcon,
   GitHubLogoIcon,
@@ -14,6 +15,7 @@ import {
 import { useTranslations } from "next-intl";
 import HomeImageButton from "./home-image-button";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const avatarProps = {
   src: "/image-avatar-dudu.png",
@@ -21,18 +23,20 @@ const avatarProps = {
 };
 
 export default function HomeContent() {
+  const locale = useLocale();
+  const router = useRouter();
   const t = useTranslations("HomePage");
   const [selectedLink, setSelectedLink] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const projectImages = [
     {
-      link: "https://www.behance.net/gallery/201725767/SINV-Bradesco",
+      link: `/${locale}/sinv`,
       key: "project1",
       icon: LockClosedIcon,
       requiresModal: true,
     },
     {
-      link: "https://www.behance.net/gallery/201725767/SINV-Bradesco",
+      link: `/${locale}/advisorapp`,
       key: "project2",
       icon: LockClosedIcon,
       requiresModal: true,
@@ -50,7 +54,7 @@ export default function HomeContent() {
       requiresModal: false,
     },
     {
-      link: "https://www.behance.net/gallery/201725767/SINV-Bradesco",
+      link: `/${locale}/petinder`,
       key: "project5",
       icon: OpenInNewWindowIcon,
       requiresModal: false,
@@ -62,7 +66,7 @@ export default function HomeContent() {
       setSelectedLink(link);
       setIsModalOpen(true);
     } else {
-      window.open(link, "_blank", "noopener noreferrer");
+      router.push(link);
     }
   };
 

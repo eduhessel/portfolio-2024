@@ -15,6 +15,7 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { useToast } from "@/components/use-toast";
 import { Eye, EyeOff } from "react-feather";
+import { useRouter } from "next/navigation";
 
 interface ModalPasswordProps {
   isOpen: boolean;
@@ -32,12 +33,13 @@ export function ModalPassword({
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const correctPassword = "eduardohessel@2024";
+  const router = useRouter();
 
   const { toast } = useToast();
 
   const handleSubmit = () => {
     if (password === correctPassword && targetLink) {
-      window.open(targetLink, "_blank");
+      router.push(targetLink);
       onClose();
       toast({
         title: t("toast.success.title"),
