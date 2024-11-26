@@ -45,8 +45,8 @@
       "allBooks": "Imagem referente ao projeto UI Design Allbooks aplicativo mobile"
     },
     "modalPassword": {
-      "title": "Senha de proteção",
-      "description": "Fale diretamente comigo para obter a senha de acesso. Acesso liberado apenas para recrutadores e clientes.",
+      "title": "Conteúdo protegido",
+      "description": "Este conteúdo é protegido devido a acordos de confidencialidade (NDA). Para obter acesso, entre em contato diretamente comigo. O acesso é restrito a recrutadores e clientes autorizados.",
       "label": "Senha",
       "button": "Acessar",
       "placeholder": "Inserir senha de acesso",

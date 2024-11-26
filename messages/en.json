@@ -17,15 +17,17 @@
     "rights": "All rights reserved. © 2024 Eduardo Hessel"
   },
   "HomePage": {
-    "title": "Hi, I'm Eduardo Hessel!",
-    "subtitle": "UI/UX Designer | Product Designer | Web Designer | Front-end Developer",
+    "title": "Dudu is a Product Designer who designs meaningful user-centered experiences.",
+    "subtitle": "Currently working at Polvo as a Product Designer building solutions for companies.",
     "description": "I started in Design at the age of 14 in graphic design, and now at 24, I see how important that was for my career. I have a high level of creativity and problem-solving skills. I focus on UI/UX and Product Design with 3 years of experience, working on projects with multidisciplinary teams, incorporating usability principles and information architecture into design proposals, ensuring a user-centered approach from conception to implementation.",
     "rollDown": "Scroll down and check out my projects!",
     "projects": "Projects",
     "myLinks": "My Links",
-    "project1": "teste",
-    "project2": "teste2",
-    "project3": "teste3",
+    "project1": "SINV - Bradesco",
+    "project2": "Advisor App - Smartbrain",
+    "project3": "Ascent Design System - Smartbrain",
+    "project4": "Cephalopod Design System - Polvo",
+    "project5": "Petinder - Volunteer Project",
     "hoverTexts": {
       "cephalopodUi": "Design System",
       "ascent": "UI Kit",
@@ -43,8 +45,8 @@
       "allBooks": "Image related to the UI Design project - Allbooks mobile app"
     },
     "modalPassword": {
-      "title": "Protection password",
-      "description": "Speak directly to me to obtain the access password. Access only available to recruiters and clients.",
+      "title": "Protected content",
+      "description": "This content is protected due to non-disclosure agreements (NDA). To gain access, please contact me directly. Access is restricted to authorized recruiters and customers.",
       "label": "Password",
       "button": "Access",
       "placeholder": "Enter password",
