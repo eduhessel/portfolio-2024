@@ -8,7 +8,7 @@ export default function Petinder(){
             <div className="flex flex-col mt-4">
                 <div className="containerContent flex flex-col">
                     <h1>Petinder</h1>
-                    <Image src={"/petinder.png"} width={1400} height={9000} alt="Imagem projeto Petinder" />
+                    <Image src={'/petinder-image.png'} width={1400} height={9000} alt="Imagem projeto Petinder" />
                 </div>
             </div>
         </main>
