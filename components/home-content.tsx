@@ -30,14 +30,14 @@ export default function HomeContent() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const projectImages = [
     {
-      link: `/${locale}/sinv`,
-      key: "project1",
+      link: `/${locale}/advisorapp`,
+      key: "project2",
       icon: LockClosedIcon,
       requiresModal: true,
     },
     {
-      link: `/${locale}/advisorapp`,
-      key: "project2",
+      link: `/${locale}/sinv`,
+      key: "project1",
       icon: LockClosedIcon,
       requiresModal: true,
     },
@@ -89,13 +89,15 @@ export default function HomeContent() {
           {t("projects")}
         </h2>
         <div className={styles.buttonsContainer}>
-        {projectImages.map((image, index) => {
+          {projectImages.map((image, index) => {
             const Icon = image.icon; // Referência dinâmica ao ícone
             return (
               <button
                 key={index}
                 className={styles.buttonPortfolio}
-                onClick={() => handleButtonClick(image.link, image.requiresModal)}
+                onClick={() =>
+                  handleButtonClick(image.link, image.requiresModal)
+                }
               >
                 <h4>{t(`${image.key}`)}</h4>
                 <Icon className="h-4 w-4" />
@@ -104,9 +106,9 @@ export default function HomeContent() {
           })}
         </div>
         <ModalPassword
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        targetLink={selectedLink}
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          targetLink={selectedLink}
         />
         {/* <div className={styles.projectsContainer}>
           <HomeImageButton />

@@ -1,7 +1,13 @@
+"use client";
+
 import { BreadcrumbPetinder } from "@/components/breadcrumb-petinder";
 import Image from "next/image";
+import { useState } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default function Petinder() {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <>
       <main>
@@ -11,12 +17,21 @@ export default function Petinder() {
             <div className="flex items-center gap-3">
               <h1>Petinder</h1>
             </div>
-            <Image
-              src={"/petinder-image.png"}
-              width={1400}
-              height={9000}
-              alt="Imagem projeto Petinder"
-            />
+            <div className="relative">
+              {isLoading && (
+                <Skeleton className="w-full h-[900px] bg-gray-200" />
+              )}
+              <Image
+                src={"/petinder-image.png"}
+                width={1400}
+                height={900}
+                alt="Imagem projeto Petinder"
+                onLoadingComplete={() => setIsLoading(false)}
+                className={`transition-opacity duration-500 ${
+                  isLoading ? "opacity-0" : "opacity-100"
+                }`}
+              />
+            </div>
           </div>
         </div>
       </main>
