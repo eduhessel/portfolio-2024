@@ -53,7 +53,7 @@
       "toast": {
         "success": {
           "title": "Success!",
-          "description": "The page was opened in a new browser tab."
+          "description": "Now he has access to Eduardo's protected projects."
         },
         "error": {
           "title": "Error!",
