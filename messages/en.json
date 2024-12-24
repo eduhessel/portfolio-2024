@@ -50,6 +50,7 @@
       "label": "Password",
       "button": "Access",
       "placeholder": "Enter password",
+      "errorMessage": "Invalid password",
       "toast": {
         "success": {
           "title": "Success!",

@@ -8,9 +8,15 @@ export default function Home() {
       <div className="flex flex-col">
         <div className="containerContent">
           {/* <AsideMenu/> */}
-          <HomeContent/>
+          <HomeContent />
           <div className="">
-            <Image className="shadow-md" width={700} height={700} src={'/image-duwdu-profile.png'} alt="Imagem Eduardo Hessel"/>
+            <Image
+              className="shadow-md"
+              width={700}
+              height={700}
+              src={"/image-duwdu-profile.png"}
+              alt="Imagem Eduardo Hessel"
+            />
           </div>
         </div>
       </div>

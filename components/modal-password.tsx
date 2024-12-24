@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -12,10 +10,12 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useToast } from "@/components/use-toast";
 import { Eye, EyeOff } from "react-feather";
 import { useRouter } from "next/navigation";
+import crypto from "crypto";
+import { correctPasswordHash } from "@/utils/password-hash"; // Importando a hash da senha
 
 interface ModalPasswordProps {
   isOpen: boolean;
@@ -32,23 +32,32 @@ export function ModalPassword({
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const correctPassword = "eduardohessel@2024";
   const router = useRouter();
 
   const { toast } = useToast();
 
+  useEffect(() => {
+    if (!isOpen) {
+      setPassword("");
+      setError("");
+    }
+  }, [isOpen]);
+
+  const hashPassword = (input: string) =>
+    crypto.createHash("sha256").update(input).digest("hex");
+
   const handleSubmit = () => {
-    if (password === correctPassword && targetLink) {
-      router.push(targetLink);
-      onClose();
+    if (hashPassword(password) === correctPasswordHash && targetLink) {
       toast({
         title: t("toast.success.title"),
         description: t("toast.success.description"),
         variant: "success",
         duration: 1500,
       });
+      router.push(targetLink);
+      onClose();
     } else {
-      setError("senha incorreta");
+      setError(t("errorMessage"));
       toast({
         title: t("toast.error.title"),
         description: t("toast.error.description"),
@@ -58,9 +67,10 @@ export function ModalPassword({
     }
   };
 
-  const handleButtonClick = () => {
-    setPassword("");
-    setError("");
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleSubmit();
+    }
   };
 
   return (
@@ -72,7 +82,7 @@ export function ModalPassword({
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
+            <Label htmlFor="password" className="self-center text-right">
               {t("label")}
             </Label>
             <div className="relative col-span-3">
@@ -82,27 +92,26 @@ export function ModalPassword({
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder={t("placeholder")}
-                className="pr-12"
+                className={`pr-12 ${error ? "border-red-500" : ""}`}
+                onKeyDown={handleKeyDown}
               />
+              {error && (
+                <p className="text-red-500 text-sm mt-1 absolute top-full left-0">
+                  {error}
+                </p>
+              )}
               <button
                 type="button"
                 className="absolute right-2 top-1/2 transform -translate-y-1/2"
-                onClick={() => setShowPassword(!showPassword)} // Alterna o estado
+                onClick={() => setShowPassword(!showPassword)}
               >
-                {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}{" "}
+                {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
               </button>
             </div>
           </div>
         </div>
         <DialogFooter>
-          <Button
-            onClick={() => {
-              handleSubmit();
-              handleButtonClick();
-            }}
-          >
-            {t("button")}
-          </Button>
+          <Button onClick={handleSubmit}>{t("button")}</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

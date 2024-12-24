@@ -50,6 +50,7 @@
       "label": "Senha",
       "button": "Acessar",
       "placeholder": "Inserir senha de acesso",
+      "errorMessage": "Senha incorreta",
       "toast": {
         "success": {
           "title": "Sucesso!",
