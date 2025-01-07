@@ -1,13 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
-import { ArrowLeftCircle } from "lucide-react";
 import { BreadcrumbAdvisorApp } from "@/components/breadcrumb-advisorapp";
 import { Skeleton } from "@/components/ui/skeleton";
+import withAuthProtection from "@/components/hoc/withAuthProtection"; // Importe o HOC
 
-export default function AdvisorApp() {
+function AdvisorApp() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
@@ -40,3 +39,6 @@ export default function AdvisorApp() {
     </>
   );
 }
+
+// Aplica o HOC para garantir que a página seja protegida
+export default withAuthProtection(AdvisorApp);

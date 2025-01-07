@@ -1,26 +1,18 @@
 "use client";
 
-import Image from "next/image";
 import styles from "@/styles/home-content.module.css";
 import Link from "next/link";
 import { ModalPassword } from "./modal-password";
 import { useLocale } from "next-intl";
 import {
   EnvelopeClosedIcon,
-  GitHubLogoIcon,
   LinkedInLogoIcon,
   LockClosedIcon,
   OpenInNewWindowIcon,
 } from "@radix-ui/react-icons";
 import { useTranslations } from "next-intl";
-import HomeImageButton from "./home-image-button";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-
-const avatarProps = {
-  src: "/image-avatar-dudu.png",
-  alt: "Foto de Eduardo Hessel, um jovem Designer e Desenvolvedor.",
-};
 
 export default function HomeContent() {
   const locale = useLocale();
@@ -73,15 +65,10 @@ export default function HomeContent() {
   return (
     <main className="w-full flex flex-col gap-8">
       <section aria-labelledby="descrição" className={styles.menuSection}>
-        {/* <div className="relative w-[150px] h-[150px]">
-          <Image className="rounded-full shadow-md" fill {...avatarProps} />
-        </div> */}
         <header className="flex flex-col gap-4">
           <h1>{t("title")}</h1>
           <h2 className="font-normal text-sm">{t("subtitle")}</h2>
         </header>
-        {/* <p>{t("description")}</p> */}
-        {/* <p>{t("rollDown")}</p> */}
       </section>
 
       <section aria-labelledby="projetos" className="flex flex-col">
@@ -90,7 +77,7 @@ export default function HomeContent() {
         </h2>
         <div className={styles.buttonsContainer}>
           {projectImages.map((image, index) => {
-            const Icon = image.icon; // Referência dinâmica ao ícone
+            const Icon = image.icon;
             return (
               <button
                 key={index}
@@ -110,9 +97,6 @@ export default function HomeContent() {
           onClose={() => setIsModalOpen(false)}
           targetLink={selectedLink}
         />
-        {/* <div className={styles.projectsContainer}>
-          <HomeImageButton />
-        </div> */}
       </section>
 
       <section aria-labelledby="meus-links">
@@ -127,13 +111,6 @@ export default function HomeContent() {
           >
             <LinkedInLogoIcon className={styles.iconWithLink} />
           </Link>
-          {/* <Link
-            href="https://github.com/eduhessel"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <GitHubLogoIcon className={styles.iconWithLink} />
-          </Link> */}
           <Link
             href="mailto:deveduardohessel@gmail.com"
             target="_blank"

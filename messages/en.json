@@ -61,6 +61,12 @@
           "description": "Incorrect password. Please try again."
         }
       }
+    },
+    "Unauthorized": {
+      "title": "🚫 Access Denied",
+      "description": "You do not have permission to access this protected content.",
+      "button": "Back to Homepage",
+      "loading": "Loading..."
     }
   },
   "AsideMenu": {

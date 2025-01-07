@@ -61,6 +61,12 @@
           "description": "Senha incorreta. Tente novamente."
         }
       }
+    },
+    "Unauthorized": {
+      "title": "🚫 Acesso Negado",
+      "description": "Você não tem permissão para acessar este conteúdo protegido.",
+      "button": "Voltar para página inicial",
+      "loading": "Carregando..."
     }
   },
   "AsideMenu": {

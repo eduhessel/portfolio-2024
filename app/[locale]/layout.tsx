@@ -9,6 +9,7 @@ import Footer from "@/components/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "@/components/ui/toaster";
+import { AuthProvider } from "@/context/authContext";
 
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
@@ -30,19 +31,22 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={robotoMono.className}>
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <TopMenu />
-            {children}
-            <SpeedInsights />
-            <Analytics />
-            <Footer />
-          </ThemeProvider>
-          <Toaster />
+          <AuthProvider>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <TopMenu />
+              {children}
+              <SpeedInsights />
+              <Analytics />
+              <Footer />
+            </ThemeProvider>
+            <Toaster />
+          </AuthProvider>{" "}
+          {/* Fechamento correto do AuthProvider */}
         </NextIntlClientProvider>
       </body>
     </html>

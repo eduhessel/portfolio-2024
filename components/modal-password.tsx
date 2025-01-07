@@ -15,7 +15,9 @@ import { useToast } from "@/components/use-toast";
 import { Eye, EyeOff } from "react-feather";
 import { useRouter } from "next/navigation";
 import crypto from "crypto";
-import { correctPasswordHash } from "@/utils/password-hash"; // Importando a hash da senha
+import { correctPasswordHash } from "@/utils/password-hash";
+import { useLocale } from "next-intl";
+import { useAuth } from "@/context/authContext"; // Importando o hook useAuth
 
 interface ModalPasswordProps {
   isOpen: boolean;
@@ -29,12 +31,12 @@ export function ModalPassword({
   targetLink,
 }: ModalPasswordProps) {
   const t = useTranslations("HomePage.modalPassword");
+  const { setAuthenticated } = useAuth(); // Usando setAuthenticated para alterar o estado de autenticação
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const router = useRouter();
-
-  const { toast } = useToast();
+  const locale = useLocale();
 
   useEffect(() => {
     if (!isOpen) {
@@ -47,23 +49,12 @@ export function ModalPassword({
     crypto.createHash("sha256").update(input).digest("hex");
 
   const handleSubmit = () => {
-    if (hashPassword(password) === correctPasswordHash && targetLink) {
-      toast({
-        title: t("toast.success.title"),
-        description: t("toast.success.description"),
-        variant: "success",
-        duration: 1500,
-      });
-      router.push(targetLink);
+    if (hashPassword(password) === correctPasswordHash) {
+      setAuthenticated(true); // Define a autenticação como verdadeira
+      router.push(targetLink || `/${locale}/sinv` || `/${locale}/advisorapp`);
       onClose();
     } else {
       setError(t("errorMessage"));
-      toast({
-        title: t("toast.error.title"),
-        description: t("toast.error.description"),
-        variant: "destructive",
-        duration: 1500,
-      });
     }
   };
 
@@ -92,7 +83,7 @@ export function ModalPassword({
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder={t("placeholder")}
-                className={`pr-12 ${error ? "border-red-500" : ""}`}
+                className={error ? "border-red-500" : ""}
                 onKeyDown={handleKeyDown}
               />
               {error && (

@@ -4,8 +4,9 @@ import Image from "next/image";
 import { useState } from "react";
 import { BreadcrumbSinv } from "@/components/breadcrumb-sinv";
 import { Skeleton } from "@/components/ui/skeleton";
+import withAuthProtection from "@/components/hoc/withAuthProtection"; // Importe o HOC
 
-export default function Sinv() {
+function Sinv() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
@@ -38,3 +39,6 @@ export default function Sinv() {
     </>
   );
 }
+
+// Aplica o HOC para garantir que a página seja protegida
+export default withAuthProtection(Sinv);
