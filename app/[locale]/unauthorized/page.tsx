@@ -15,7 +15,7 @@ export default function Unauthorized() {
           <div className="flex flex-col gap-4 items-center min-h-screen">
             <Image
               src={"/face-unauthorized.png"}
-              alt="teste"
+              alt="Imagem de rosto triste com o erro"
               width={400}
               height={400}
             />
