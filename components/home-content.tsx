@@ -13,6 +13,7 @@ import {
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { CardRecomendacoes } from "./card-recomendacoes";
 
 export default function HomeContent() {
   const locale = useLocale();
@@ -50,6 +51,29 @@ export default function HomeContent() {
       key: "project5",
       icon: OpenInNewWindowIcon,
       requiresModal: false,
+    },
+  ];
+
+  const recomendacoes = [
+    {
+      title: t("recomendations.emilio.title"),
+      description: t("recomendations.emilio.description"),
+      link: "https://www.linkedin.com/in/emilio-nagano/",
+    },
+    {
+      title: t("recomendations.flavio.title"),
+      description: t("recomendations.flavio.description"),
+      link: "https://www.linkedin.com/in/flaviopaulino/",
+    },
+    {
+      title: t("recomendations.karol.title"),
+      description: t("recomendations.karol.description"),
+      link: "https://www.linkedin.com/in/karol-oliveira-408363bb/",
+    },
+    {
+      title: t("recomendations.wellington.title"),
+      description: t("recomendations.wellington.description"),
+      link: "https://www.linkedin.com/in/wellingtondev/",
     },
   ];
 
@@ -118,6 +142,20 @@ export default function HomeContent() {
           >
             <EnvelopeClosedIcon className={styles.iconWithLink} />
           </Link>
+        </div>
+      </section>
+
+      <section aria-labelledby="recomendacoes" className="pb-4">
+        <h2 className={styles.h2Projects}>Recomendações</h2>
+        <div className="flex flex-col gap-4">
+          {recomendacoes.map((recomendacao, index) => (
+            <CardRecomendacoes
+              key={index}
+              title={recomendacao.title}
+              description={recomendacao.description}
+              link={recomendacao.link}
+            />
+          ))}
         </div>
       </section>
     </main>

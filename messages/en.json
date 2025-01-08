@@ -29,6 +29,25 @@
     "project4": "Cephalopod Design System - Polvo",
     "project5": "Petinder - Volunteer Project",
     "acessPrototype": "Acess prototype",
+    "recomendations": {
+      "emilio": {
+        "title": "Emilio Nagano",
+        "description": "Eduardo is an excellent professional. We worked on development projects and prototyping new products, and he has extensive experience in Design System development, UX standardization, and is very agile in creating mockups for new products. I highly recommend!"
+      },
+      "flavio": {
+        "title": "Flávio A Paulino",
+        "description": "Eduardo is an exceptional designer with whom I had the pleasure of sharing knowledge and learning in return. During his first job at Smartbrain, I had the opportunity to extensively mentor him, teaching him not only design principles but also critical programming skills, including HTML, JavaScript, Python, and React. Edu made significant contributions to the Smartbrain Advisor Design System and played a key role in developing prototypes for our platform and various products for clients like Banco Bradesco and Banco Master. His logical thinking is excellent, and he quickly mastered color usage in design. As a design manager, I found myself learning more about the product with Edu than with many others on the team. 🎨⚔️💚 #designer #crypto #wealth #datavisualization"
+      },
+      "karol": {
+        "title": "Karol Oliveira",
+        "description": "I had the pleasure of working with Eduardo in the UX role. As key traits, I would recommend his loyalty, creativity, organization, always seeking to bring innovations for process improvements, market trends, committed to his team, and attentive to deadlines."
+      },
+      "wellington": {
+        "title": "Wellington Almeida",
+        "description": "Eduardo is an excellent creative Front-end developer. He has extensive knowledge and expertise in user interfaces as well as the ability to solve problems. Great potential to go far! 🚀"
+      },
+      "buttonLinkedin": "View LinkedIn"
+    },
     "hoverTexts": {
       "cephalopodUi": "Design System",
       "ascent": "UI Kit",
@@ -81,6 +100,11 @@
     "about": "ABOUT ME",
     "links": "MY LINKS"
   },
+  "MenuTop": {
+    "home": "Home",
+    "about": "About",
+    "recomendations": "Recomendations"
+  },
   "About": {
     "title": "About Eduardo Hessel",
     "paragraph1": "Graduated in Animation Design, currently pursuing an MBA in Software Engineering. With over 3 years of experience in UX/UI Design, Product Design, and Front-end Development, I have worked at medium and large companies in website development, creating investment management applications in the financial sector, digital banks, and software houses. I am also capable of contributing to any area, significantly enhancing the creation of intuitive and responsive user interfaces, usability testing, platform and site testing, creating chatbot scripts, and all UX processes, always aiming to improve the end-user experience.",
@@ -90,7 +114,7 @@
     "polvo": {
       "name": "Polvo Software House",
       "position": "Product Designer - UI/UX Designer",
-      "duration": "Jan/2015 - Aug/2024",
+      "duration": "Jan/2023 - Moment",
       "type": "Freelance"
     },
     "smartbrain": {
@@ -102,7 +126,7 @@
     "primeo": {
       "name": "Primeo Bank",
       "position": "Product Designer - UI/UX Designer - Front-end Developer",
-      "duration": "Jul/2024 - Aug/2024",
+      "duration": "Jul/2024 - Dec/2024",
       "type": "Contract"
     },
     "tvm": {

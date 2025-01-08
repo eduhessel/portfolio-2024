@@ -7,8 +7,8 @@ export default function Home() {
     <main>
       <div className="flex flex-col">
         <div className="containerContent">
-          <AsideMenu/>
-          <AboutContent/>
+          {/* <AsideMenu/> */}
+          <AboutContent />
         </div>
       </div>
     </main>
