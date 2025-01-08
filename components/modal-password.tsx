@@ -49,7 +49,9 @@ export function ModalPassword({
     crypto.createHash("sha256").update(input).digest("hex");
 
   const handleSubmit = () => {
-    if (hashPassword(password) === correctPasswordHash) {
+    const hashedPassword = hashPassword(password);
+
+    if (correctPasswordHash.includes(hashedPassword)) {
       setAuthenticated(true); // Define a autenticação como verdadeira
       router.push(targetLink || `/${locale}/sinv` || `/${locale}/advisorapp`);
       onClose();
