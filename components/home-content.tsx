@@ -153,7 +153,6 @@ export default function HomeContent() {
               key={index}
               title={recomendacao.title}
               description={recomendacao.description}
-              link={recomendacao.link}
             />
           ))}
         </div>
