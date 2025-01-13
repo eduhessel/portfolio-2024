@@ -7,18 +7,22 @@ export default function Recomendacoes() {
     {
       title: t("recomendations.emilio.title"),
       description: t("recomendations.emilio.description"),
+      position: t("recomendations.emilio.position"),
     },
     {
       title: t("recomendations.flavio.title"),
       description: t("recomendations.flavio.description"),
+      position: t("recomendations.flavio.position"),
     },
     {
       title: t("recomendations.karol.title"),
       description: t("recomendations.karol.description"),
+      position: t("recomendations.karol.position"),
     },
     {
       title: t("recomendations.wellington.title"),
       description: t("recomendations.wellington.description"),
+      position: t("recomendations.wellington.position"),
     },
   ];
 
@@ -33,6 +37,7 @@ export default function Recomendacoes() {
                 key={index}
                 title={recomendacao.title}
                 description={recomendacao.description}
+                position={recomendacao.position}
               />
             ))}
           </div>
