@@ -14,6 +14,7 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { CardRecomendacoes } from "./card-recomendacoes";
+import { Button } from "./ui/button";
 
 export default function HomeContent() {
   const locale = useLocale();
@@ -58,21 +59,25 @@ export default function HomeContent() {
     {
       title: t("recomendations.emilio.title"),
       description: t("recomendations.emilio.description"),
+      position: t("recomendations.emilio.position"),
       link: "https://www.linkedin.com/in/emilio-nagano/",
     },
     {
       title: t("recomendations.flavio.title"),
       description: t("recomendations.flavio.description"),
+      position: t("recomendations.flavio.position"),
       link: "https://www.linkedin.com/in/flaviopaulino/",
     },
     {
       title: t("recomendations.karol.title"),
       description: t("recomendations.karol.description"),
+      position: t("recomendations.karol.position"),
       link: "https://www.linkedin.com/in/karol-oliveira-408363bb/",
     },
     {
       title: t("recomendations.wellington.title"),
       description: t("recomendations.wellington.description"),
+      position: t("recomendations.wellington.position"),
       link: "https://www.linkedin.com/in/wellingtondev/",
     },
   ];
@@ -92,6 +97,22 @@ export default function HomeContent() {
         <header className="flex flex-col gap-4">
           <h1>{t("title")}</h1>
           <h2 className="font-normal text-sm">{t("subtitle")}</h2>
+          <div className="flex flex-col gap-2">
+            <Link
+              href={"https://cal.com/duwdu"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="w-full">{t("callToActionButton")}</Button>
+            </Link>
+            <Link
+              href={"https://read.cv/duwdu"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="w-full" variant={"ghost"}>{t("callToActionButtonGhost")}</Button>
+            </Link>
+          </div>
         </header>
       </section>
 
@@ -153,6 +174,7 @@ export default function HomeContent() {
               key={index}
               title={recomendacao.title}
               description={recomendacao.description}
+              position={recomendacao.position}
             />
           ))}
         </div>
