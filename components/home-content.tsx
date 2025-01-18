@@ -110,7 +110,9 @@ export default function HomeContent() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="w-full" variant={"ghost"}>{t("callToActionButtonGhost")}</Button>
+              <Button className="w-full" variant={"ghost"}>
+                {t("callToActionButtonGhost")}
+              </Button>
             </Link>
           </div>
         </header>
