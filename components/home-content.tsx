@@ -15,6 +15,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { CardRecomendacoes } from "./card-recomendacoes";
 import { Button } from "./ui/button";
+import { motion } from "framer-motion";
 
 export default function HomeContent() {
   const locale = useLocale();
@@ -92,11 +93,19 @@ export default function HomeContent() {
   };
 
   return (
-    <main className="w-full flex flex-col gap-8">
-      <section aria-labelledby="descrição" className={styles.menuSection}>
+    <motion.main
+      className="w-full flex flex-col gap-8"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
+      <motion.section
+        aria-labelledby="descrição"
+        className={styles.menuSection}
+      >
         <header className="flex flex-col gap-4">
-          <h1>{t("title")}</h1>
-          <h2 className="font-normal text-sm">{t("subtitle")}</h2>
+          <motion.h1>{t("title")}</motion.h1>
+          <motion.h2 className="font-normal text-sm">{t("subtitle")}</motion.h2>
           <div className="flex flex-col gap-2">
             <Link
               href={"https://cal.com/duwdu"}
@@ -116,7 +125,7 @@ export default function HomeContent() {
             </Link>
           </div>
         </header>
-      </section>
+      </motion.section>
 
       <section aria-labelledby="projetos" className="flex flex-col">
         <h2 id="projetos" className={styles.h2Projects}>
@@ -197,6 +206,6 @@ export default function HomeContent() {
           ))}
         </div>
       </section>
-    </main>
+    </motion.main>
   );
 }
