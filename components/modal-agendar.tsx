@@ -25,7 +25,7 @@ export const ModalAgendar = ({ isOpen, onClose, iframeUrl }: ModalProps) => {
     >
       <motion.div
         ref={modalRef}
-        className="bg-black p-6 rounded-lg shadow-lg w-full max-w-2xl relative"
+        className="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-2xl relative"
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.8, opacity: 0 }}
@@ -34,7 +34,7 @@ export const ModalAgendar = ({ isOpen, onClose, iframeUrl }: ModalProps) => {
         {/* Botão de Fechar */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
+          className="absolute top-4 right-4 text-gray-200 hover:text-gray-500"
           aria-label="Fechar"
         >
           <svg
