@@ -57,7 +57,7 @@ export const ModalAgendar = ({ isOpen, onClose, iframeUrl }: ModalProps) => {
         <iframe
           src={iframeUrl}
           width="100%"
-          height="600px"
+          height="500px"
           frameBorder="0"
           allowFullScreen
           style={{ border: "none" }}
