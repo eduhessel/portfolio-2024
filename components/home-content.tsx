@@ -102,18 +102,34 @@ export default function HomeContent() {
         <div className={styles.buttonsContainer}>
           {projectImages.map((image, index) => {
             const Icon = image.icon;
-            return (
-              <button
-                key={index}
-                className={styles.buttonPortfolio}
-                onClick={() =>
-                  handleButtonClick(image.link, image.requiresModal)
-                }
-              >
-                <h4>{t(`${image.key}`)}</h4>
-                <Icon className="h-4 w-4" />
-              </button>
-            );
+
+            if (image.requiresModal) {
+              return (
+                <button
+                  key={index}
+                  className={styles.buttonPortfolio}
+                  onClick={() =>
+                    handleButtonClick(image.link, image.requiresModal)
+                  }
+                >
+                  <h4>{t(`${image.key}`)}</h4>
+                  <Icon className="h-4 w-4" />
+                </button>
+              );
+            } else {
+              return (
+                <Link
+                  key={index}
+                  href={image.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.buttonPortfolio}
+                >
+                  <h4>{t(`${image.key}`)}</h4>
+                  <Icon className="h-4 w-4" />
+                </Link>
+              );
+            }
           })}
         </div>
         <ModalPassword
