@@ -19,6 +19,8 @@
   "HomePage": {
     "title": "Dudu is a Product Designer who designs meaningful user-centered experiences.",
     "subtitle": "Currently studying Design Systems and improving my Product Design skills.",
+    "callToActionButton": "Book a session now!",
+    "callToActionButtonGhost": "View full CV",
     "description": "I started in Design at the age of 14 in graphic design, and now at 24, I see how important that was for my career. I have a high level of creativity and problem-solving skills. I focus on UI/UX and Product Design with 3 years of experience, working on projects with multidisciplinary teams, incorporating usability principles and information architecture into design proposals, ensuring a user-centered approach from conception to implementation.",
     "rollDown": "Scroll down and check out my projects!",
     "projects": "Projects",
@@ -32,19 +34,23 @@
     "recomendations": {
       "emilio": {
         "title": "Emilio Nagano",
-        "description": "Eduardo is an excellent professional. We worked on development projects and prototyping new products, and he has extensive experience in Design System development, UX standardization, and is very agile in creating mockups for new products. I highly recommend!"
+        "description": "Eduardo is an excellent professional. We worked on development projects and prototyping new products, and he has extensive experience in Design System development, UX standardization, and is very agile in creating mockups for new products. I highly recommend!",
+        "position": "Product Manager Lead - Smartbrain"
       },
       "flavio": {
         "title": "Flávio A Paulino",
-        "description": "Eduardo is an exceptional designer with whom I had the pleasure of sharing knowledge and learning in return. During his first job at Smartbrain, I had the opportunity to extensively mentor him, teaching him not only design principles but also critical programming skills, including HTML, JavaScript, Python, and React. Edu made significant contributions to the Smartbrain Advisor Design System and played a key role in developing prototypes for our platform and various products for clients like Banco Bradesco and Banco Master. His logical thinking is excellent, and he quickly mastered color usage in design. As a design manager, I found myself learning more about the product with Edu than with many others on the team. 🎨⚔️💚 #designer #crypto #wealth #datavisualization"
+        "description": "Eduardo is an exceptional designer with whom I had the pleasure of sharing knowledge and learning in return. During his first job at Smartbrain, I had the opportunity to extensively mentor him, teaching him not only design principles but also critical programming skills, including HTML, JavaScript, Python, and React. Edu made significant contributions to the Smartbrain Advisor Design System and played a key role in developing prototypes for our platform and various products for clients like Banco Bradesco and Banco Master. His logical thinking is excellent, and he quickly mastered color usage in design. As a design manager, I found myself learning more about the product with Edu than with many others on the team. 🎨⚔️💚 #designer #crypto #wealth #datavisualization",
+        "position": "Product Designer Lead - Smartbrain"
       },
       "karol": {
         "title": "Karol Oliveira",
-        "description": "I had the pleasure of working with Eduardo in the UX role. As key traits, I would recommend his loyalty, creativity, organization, always seeking to bring innovations for process improvements, market trends, committed to his team, and attentive to deadlines."
+        "description": "I had the pleasure of working with Eduardo in the UX role. As key traits, I would recommend his loyalty, creativity, organization, always seeking to bring innovations for process improvements, market trends, committed to his team, and attentive to deadlines.",
+        "position": "Product Manager - Smartbrain"
       },
       "wellington": {
         "title": "Wellington Almeida",
-        "description": "Eduardo is an excellent creative Front-end developer. He has extensive knowledge and expertise in user interfaces as well as the ability to solve problems. Great potential to go far! 🚀"
+        "description": "Eduardo is an excellent creative Front-end developer. He has extensive knowledge and expertise in user interfaces as well as the ability to solve problems. Great potential to go far! 🚀",
+        "position": "Front-end Developer - Smartbrain"
       },
       "buttonLinkedin": "View LinkedIn"
     },
@@ -66,7 +72,7 @@
     },
     "modalPassword": {
       "title": "Protected content",
-      "description": "This content is protected due to non-disclosure agreements (NDA). To gain access, please contact me directly. Access is restricted to authorized recruiters and customers.",
+      "description": "This content is protected due to non-disclosure agreements (NDA).",
       "label": "Password",
       "button": "Access",
       "placeholder": "Enter password",
@@ -111,29 +117,29 @@
     "paragraph2": "Extensive experience in web and mobile application development, with a focus on implementing Design Systems and using libraries such as Daisy UI and Shadcn UI, along with solid expertise in modern technologies like NextJS, Typescript, Vue, and Bootstrap. My work is characterized by the ability to create interfaces that adhere to strict style standards, ensuring consistency and excellence throughout the development process, from conception to final delivery.",
     "paragraph3": "Proficient in Figma, Visual Studio Code, Git, GitHub, Teams, Google Meet, Trello, Clickup, Notion, and Jira, with a focus on promoting effective collaboration and optimizing processes in multidisciplinary teams. I am committed to continuing to expand my technical skills and contribute to the development of innovative digital products that add value to both users and organizations. Communication, creativity, problem-solving, networking, adaptability, empathy, flexibility.",
     "professionalExperience": "Professional Experience",
-    "polvo": {
-      "name": "Polvo Software House",
-      "position": "Product Designer - UI/UX Designer",
-      "duration": "Jan/2023 - Moment",
-      "type": "Freelance"
+    "primeo": {
+      "name": "Primeo",
+      "position": "Product Designer",
+      "duration": "Jun/2024 - Dec/2024",
+      "type": "Contract"
     },
     "smartbrain": {
       "name": "Smartbrain",
-      "position": "Product Designer - UI/UX Designer - Front-end Developer",
+      "position": "Junior Product Designer",
       "duration": "Jan/2022 - May/2024",
-      "type": "Full-time"
-    },
-    "primeo": {
-      "name": "Primeo Bank",
-      "position": "Product Designer - UI/UX Designer - Front-end Developer",
-      "duration": "Jul/2024 - Dec/2024",
       "type": "Contract"
     },
-    "tvm": {
-      "name": "Tem Vaga Mestre?",
-      "position": "Product Designer - UI/UX Designer",
-      "duration": "May/2024 - Jul/2024",
-      "type": "Volunteer"
+    "bradesco": {
+      "name": "Bradesco",
+      "position": "Junior Product Designer",
+      "duration": "Jan/2023 - Dec/2023",
+      "type": "Outsourced"
+    },
+    "aic": {
+      "name": "AIC Materials",
+      "position": "Junior Art Director",
+      "duration": "Jan/2020 - Dec/2021",
+      "type": "Contract"
     },
     "education": "Education",
     "usp": {

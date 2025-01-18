@@ -27,14 +27,6 @@ export default function AboutContent() {
       <section className="flex flex-col gap-4">
         <h2>{t("professionalExperience")}</h2>
         <div>
-          <h3>{t("polvo.name")}</h3>
-          <ul>
-            <p>{t("polvo.position")}</p>
-            <p>{t("polvo.duration")}</p>
-            <p>{t("polvo.type")}</p>
-          </ul>
-        </div>
-        <div>
           <h3>{t("primeo.name")}</h3>
           <ul>
             <p>{t("primeo.position")}</p>
@@ -48,6 +40,22 @@ export default function AboutContent() {
             <p>{t("smartbrain.position")}</p>
             <p>{t("smartbrain.duration")}</p>
             <p>{t("smartbrain.type")}</p>
+          </ul>
+        </div>
+        <div>
+          <h3>{t("bradesco.name")}</h3>
+          <ul>
+            <p>{t("bradesco.position")}</p>
+            <p>{t("bradesco.duration")}</p>
+            <p>{t("bradesco.type")}</p>
+          </ul>
+        </div>
+        <div>
+          <h3>{t("aic.name")}</h3>
+          <ul>
+            <p>{t("aic.position")}</p>
+            <p>{t("aic.duration")}</p>
+            <p>{t("aic.type")}</p>
           </ul>
         </div>
         {/* <div>
