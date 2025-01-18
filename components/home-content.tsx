@@ -16,6 +16,7 @@ import { useRouter } from "next/navigation";
 import { CardRecomendacoes } from "./card-recomendacoes";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
+import { ModalAgendar } from "./modal-agendar";
 
 export default function HomeContent() {
   const locale = useLocale();
@@ -92,6 +93,9 @@ export default function HomeContent() {
     }
   };
 
+  const [isIframeModalOpen, setIsIframeModalOpen] = useState(false);
+  const [iframeUrl, setIframeUrl] = useState<string | null>(null);
+
   return (
     <motion.main
       className="w-full flex flex-col gap-8"
@@ -107,13 +111,15 @@ export default function HomeContent() {
           <motion.h1>{t("title")}</motion.h1>
           <motion.h2 className="font-normal text-sm">{t("subtitle")}</motion.h2>
           <div className="flex flex-col gap-2">
-            <Link
-              href={"https://cal.com/duwdu"}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Button
+              className="w-full"
+              onClick={() => {
+                setIframeUrl("https://cal.com/duwdu"); // Substitua pelo seu link Cal.com
+                setIsIframeModalOpen(true);
+              }}
             >
-              <Button className="w-full">{t("callToActionButton")}</Button>
-            </Link>
+              {t("callToActionButton")}
+            </Button>
             <Link
               href={"https://read.cv/duwdu"}
               target="_blank"
@@ -206,6 +212,11 @@ export default function HomeContent() {
           ))}
         </div>
       </section>
+      <ModalAgendar
+        isOpen={isIframeModalOpen}
+        onClose={() => setIsIframeModalOpen(false)}
+        iframeUrl={iframeUrl || ""}
+      />
     </motion.main>
   );
 }
