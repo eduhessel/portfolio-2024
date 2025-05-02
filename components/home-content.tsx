@@ -111,17 +111,19 @@ export default function HomeContent() {
           <motion.h1>{t("title")}</motion.h1>
           <motion.h2 className="font-normal text-sm">{t("subtitle")}</motion.h2>
           <div className="flex flex-col gap-2">
+            <Link
+              href={"https://cal.com/duwdu"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <Button
               className="w-full"
-              onClick={() => {
-                setIframeUrl("https://cal.com/duwdu"); // Substitua pelo seu link Cal.com
-                setIsIframeModalOpen(true);
-              }}
             >
               {t("callToActionButton")}
             </Button>
+              </Link>
             <Link
-              href={"https://read.cv/duwdu"}
+              href={"https://cv.eduardohessel.com.br/"} https://cal.com/duwdu
               target="_blank"
               rel="noopener noreferrer"
             >
