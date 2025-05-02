@@ -123,7 +123,7 @@ export default function HomeContent() {
             </Button>
               </Link>
             <Link
-              href={"https://cv.eduardohessel.com.br/"} https://cal.com/duwdu
+              href={"https://cv.eduardohessel.com.br/"}
               target="_blank"
               rel="noopener noreferrer"
             >
