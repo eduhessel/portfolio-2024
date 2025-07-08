@@ -185,7 +185,7 @@ export default function HomeContent() {
         </h2>
         <div className={styles.iconsContainer}>
           <Link
-            href="https://www.linkedin.com/in/eduardo-hessel"
+            href="https://www.linkedin.com/in/eduardohessel"
             target="_blank"
             rel="noopener noreferrer"
           >
