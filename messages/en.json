@@ -14,7 +14,7 @@
   },
   "Footer": {
     "tools": "Website developed using Nextjs 14, Tailwind, ShadcnUI and Figma.",
-    "rights": "All rights reserved. © 2024 Eduardo Hessel"
+    "rights": "All rights reserved. © 2026 Eduardo Hessel"
   },
   "HomePage": {
     "title": "Dudu is a Product Designer who designs meaningful user-centered experiences.",
@@ -25,11 +25,11 @@
     "rollDown": "Scroll down and check out my projects!",
     "projects": "Projects",
     "myLinks": "My Links",
-    "project1": "SINV - Bradesco",
-    "project2": "Advisor App - Smartbrain",
-    "project3": "Ascent Design System - Smartbrain",
-    "project4": "Cephalopod Design System - Polvo",
-    "project5": "Petinder - Volunteer Project",
+    "project1": "SINV",
+    "project2": "Advisor App",
+    "project3": "Ascent Figma Design System",
+    "project4": "Cephalopod Design System",
+    "project5": "Petinder",
     "acessPrototype": "Acess prototype",
     "recomendations": {
       "emilio": {
