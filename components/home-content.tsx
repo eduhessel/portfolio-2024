@@ -44,7 +44,7 @@ export default function HomeContent() {
       requiresModal: true,
     },
     {
-      link: "https://zeroheight.com/73787951a/p/22b1a2-cephalopod-design-system",
+      link: "https://cephalopod-design-system.vercel.app/",
       key: "project4",
       icon: OpenInNewWindowIcon,
       requiresModal: false,
